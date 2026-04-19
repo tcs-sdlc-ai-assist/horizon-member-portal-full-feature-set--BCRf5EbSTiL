@@ -159,7 +159,7 @@ export const maskSSN = (ssn) => {
 
 /**
  * Mask a date of birth, showing only the year.
- * Example: "1985-03-15" → "**/**/1985"
+ * Example: "1985-03-15" → "**,**,1985"
  *
  * @param {string} dob - The date of birth to mask
  * @returns {string} The masked date of birth, or empty string if invalid
