@@ -1,0 +1,315 @@
+[
+  {
+    "coverageId": "COV-MED-001",
+    "coverageType": "Medical",
+    "planName": "Horizon Blue Cross Blue Shield - PPO",
+    "memberId": "HBM-100234567",
+    "groupNumber": "GRP-50012",
+    "subscriberName": "John Doe",
+    "subscriberDob": "1985-03-15",
+    "effectiveDate": "2024-01-01",
+    "terminationDate": null,
+    "status": "active",
+    "rxBin": "004336",
+    "rxPcn": "ADV",
+    "rxGroup": "RX9876",
+    "rxId": "HBM100234567",
+    "copays": {
+      "primaryCare": 20,
+      "specialist": 40,
+      "urgentCare": 50,
+      "emergencyRoom": 150
+    },
+    "dependents": [
+      {
+        "name": "Jane Doe",
+        "memberId": "HBM-100234568",
+        "relationship": "Spouse",
+        "dateOfBirth": "1987-06-20"
+      },
+      {
+        "name": "Emily Doe",
+        "memberId": "HBM-100234569",
+        "relationship": "Child",
+        "dateOfBirth": "2015-09-10"
+      }
+    ],
+    "frontFields": {
+      "planName": "Horizon Blue Cross Blue Shield - PPO",
+      "memberName": "John Doe",
+      "memberId": "HBM-100234567",
+      "groupNumber": "GRP-50012",
+      "effectiveDate": "01/01/2024",
+      "copayPrimaryCare": "$20",
+      "copaySpecialist": "$40",
+      "copayUrgentCare": "$50",
+      "copayEmergencyRoom": "$150",
+      "rxBin": "004336",
+      "rxPcn": "ADV",
+      "rxGroup": "RX9876"
+    },
+    "backFields": {
+      "claimsAddress": "Horizon BCBSNJ, PO Box 820, Newark, NJ 07101-0820",
+      "claimsPhone": "1-800-355-2583",
+      "preAuthPhone": "1-800-664-2583",
+      "memberServicesPhone": "1-800-355-2583",
+      "nurseLinePhone": "1-800-624-2212",
+      "mentalHealthPhone": "1-800-626-2212",
+      "pharmacyHelpDesk": "1-800-700-2583",
+      "providerServicesPhone": "1-800-624-1110",
+      "websiteUrl": "www.horizonblue.com",
+      "emergencyNotice": "In case of emergency, go to the nearest emergency room or call 911."
+    }
+  },
+  {
+    "coverageId": "COV-DEN-001",
+    "coverageType": "Dental",
+    "planName": "Horizon Dental PPO",
+    "memberId": "HBM-100234567",
+    "groupNumber": "GRP-50012",
+    "subscriberName": "John Doe",
+    "subscriberDob": "1985-03-15",
+    "effectiveDate": "2024-01-01",
+    "terminationDate": null,
+    "status": "active",
+    "rxBin": null,
+    "rxPcn": null,
+    "rxGroup": null,
+    "rxId": null,
+    "copays": {
+      "preventive": 0,
+      "basic": 20,
+      "major": 50,
+      "orthodontia": 50
+    },
+    "dependents": [
+      {
+        "name": "Jane Doe",
+        "memberId": "HBM-100234568",
+        "relationship": "Spouse",
+        "dateOfBirth": "1987-06-20"
+      },
+      {
+        "name": "Emily Doe",
+        "memberId": "HBM-100234569",
+        "relationship": "Child",
+        "dateOfBirth": "2015-09-10"
+      }
+    ],
+    "frontFields": {
+      "planName": "Horizon Dental PPO",
+      "memberName": "John Doe",
+      "memberId": "HBM-100234567",
+      "groupNumber": "GRP-50012",
+      "effectiveDate": "01/01/2024",
+      "preventiveCoverage": "100%",
+      "basicCoverage": "80%",
+      "majorCoverage": "50%",
+      "orthodontiaCoverage": "50%",
+      "annualMaximum": "$2,000",
+      "deductible": "$50 Individual / $150 Family"
+    },
+    "backFields": {
+      "claimsAddress": "Horizon Dental, PO Box 820, Newark, NJ 07101-0820",
+      "claimsPhone": "1-800-355-2583",
+      "memberServicesPhone": "1-800-355-2583",
+      "providerSearchUrl": "www.horizonblue.com/find-a-dentist",
+      "websiteUrl": "www.horizonblue.com",
+      "emergencyNotice": "For dental emergencies, contact your dentist or visit the nearest emergency room."
+    }
+  },
+  {
+    "coverageId": "COV-VIS-001",
+    "coverageType": "Vision",
+    "planName": "Horizon Vision Plan",
+    "memberId": "HBM-100234567",
+    "groupNumber": "GRP-50012",
+    "subscriberName": "John Doe",
+    "subscriberDob": "1985-03-15",
+    "effectiveDate": "2024-01-01",
+    "terminationDate": null,
+    "status": "active",
+    "rxBin": null,
+    "rxPcn": null,
+    "rxGroup": null,
+    "rxId": null,
+    "copays": {
+      "eyeExam": 10,
+      "lenses": 25,
+      "frames": 25,
+      "contactLenses": 25
+    },
+    "dependents": [
+      {
+        "name": "Jane Doe",
+        "memberId": "HBM-100234568",
+        "relationship": "Spouse",
+        "dateOfBirth": "1987-06-20"
+      },
+      {
+        "name": "Emily Doe",
+        "memberId": "HBM-100234569",
+        "relationship": "Child",
+        "dateOfBirth": "2015-09-10"
+      }
+    ],
+    "frontFields": {
+      "planName": "Horizon Vision Plan",
+      "memberName": "John Doe",
+      "memberId": "HBM-100234567",
+      "groupNumber": "GRP-50012",
+      "effectiveDate": "01/01/2024",
+      "copayEyeExam": "$10",
+      "copayLenses": "$25",
+      "copayFrames": "$25",
+      "frameAllowance": "$200",
+      "contactLensAllowance": "$150",
+      "examFrequency": "Every 12 months"
+    },
+    "backFields": {
+      "claimsAddress": "Horizon Vision, PO Box 820, Newark, NJ 07101-0820",
+      "claimsPhone": "1-800-355-2583",
+      "memberServicesPhone": "1-800-355-2583",
+      "providerSearchUrl": "www.horizonblue.com/find-an-eye-doctor",
+      "websiteUrl": "www.horizonblue.com",
+      "emergencyNotice": "For eye emergencies, contact your eye care provider or visit the nearest emergency room."
+    }
+  },
+  {
+    "coverageId": "COV-MED-002",
+    "coverageType": "Medical",
+    "planName": "Horizon Blue Cross Blue Shield - HMO",
+    "memberId": "HBM-100987654",
+    "groupNumber": "GRP-50034",
+    "subscriberName": "Maria Smith",
+    "subscriberDob": "1990-07-22",
+    "effectiveDate": "2024-01-01",
+    "terminationDate": null,
+    "status": "active",
+    "rxBin": "004336",
+    "rxPcn": "ADV",
+    "rxGroup": "RX5432",
+    "rxId": "HBM100987654",
+    "copays": {
+      "primaryCare": 15,
+      "specialist": 30,
+      "urgentCare": 40,
+      "emergencyRoom": 100
+    },
+    "dependents": [],
+    "frontFields": {
+      "planName": "Horizon Blue Cross Blue Shield - HMO",
+      "memberName": "Maria Smith",
+      "memberId": "HBM-100987654",
+      "groupNumber": "GRP-50034",
+      "effectiveDate": "01/01/2024",
+      "copayPrimaryCare": "$15",
+      "copaySpecialist": "$30",
+      "copayUrgentCare": "$40",
+      "copayEmergencyRoom": "$100",
+      "rxBin": "004336",
+      "rxPcn": "ADV",
+      "rxGroup": "RX5432"
+    },
+    "backFields": {
+      "claimsAddress": "Horizon BCBSNJ, PO Box 820, Newark, NJ 07101-0820",
+      "claimsPhone": "1-800-355-2583",
+      "preAuthPhone": "1-800-664-2583",
+      "memberServicesPhone": "1-800-355-2583",
+      "nurseLinePhone": "1-800-624-2212",
+      "mentalHealthPhone": "1-800-626-2212",
+      "pharmacyHelpDesk": "1-800-700-2583",
+      "providerServicesPhone": "1-800-624-1110",
+      "websiteUrl": "www.horizonblue.com",
+      "emergencyNotice": "In case of emergency, go to the nearest emergency room or call 911."
+    }
+  },
+  {
+    "coverageId": "COV-DEN-002",
+    "coverageType": "Dental",
+    "planName": "Horizon Dental EPO",
+    "memberId": "HBM-100987654",
+    "groupNumber": "GRP-50034",
+    "subscriberName": "Maria Smith",
+    "subscriberDob": "1990-07-22",
+    "effectiveDate": "2024-01-01",
+    "terminationDate": null,
+    "status": "active",
+    "rxBin": null,
+    "rxPcn": null,
+    "rxGroup": null,
+    "rxId": null,
+    "copays": {
+      "preventive": 0,
+      "basic": 15,
+      "major": 40,
+      "orthodontia": 50
+    },
+    "dependents": [],
+    "frontFields": {
+      "planName": "Horizon Dental EPO",
+      "memberName": "Maria Smith",
+      "memberId": "HBM-100987654",
+      "groupNumber": "GRP-50034",
+      "effectiveDate": "01/01/2024",
+      "preventiveCoverage": "100%",
+      "basicCoverage": "85%",
+      "majorCoverage": "60%",
+      "orthodontiaCoverage": "50%",
+      "annualMaximum": "$2,500",
+      "deductible": "$25 Individual / $75 Family"
+    },
+    "backFields": {
+      "claimsAddress": "Horizon Dental, PO Box 820, Newark, NJ 07101-0820",
+      "claimsPhone": "1-800-355-2583",
+      "memberServicesPhone": "1-800-355-2583",
+      "providerSearchUrl": "www.horizonblue.com/find-a-dentist",
+      "websiteUrl": "www.horizonblue.com",
+      "emergencyNotice": "For dental emergencies, contact your dentist or visit the nearest emergency room."
+    }
+  },
+  {
+    "coverageId": "COV-VIS-002",
+    "coverageType": "Vision",
+    "planName": "Horizon Vision Plus",
+    "memberId": "HBM-100987654",
+    "groupNumber": "GRP-50034",
+    "subscriberName": "Maria Smith",
+    "subscriberDob": "1990-07-22",
+    "effectiveDate": "2024-01-01",
+    "terminationDate": null,
+    "status": "active",
+    "rxBin": null,
+    "rxPcn": null,
+    "rxGroup": null,
+    "rxId": null,
+    "copays": {
+      "eyeExam": 10,
+      "lenses": 20,
+      "frames": 20,
+      "contactLenses": 20
+    },
+    "dependents": [],
+    "frontFields": {
+      "planName": "Horizon Vision Plus",
+      "memberName": "Maria Smith",
+      "memberId": "HBM-100987654",
+      "groupNumber": "GRP-50034",
+      "effectiveDate": "01/01/2024",
+      "copayEyeExam": "$10",
+      "copayLenses": "$20",
+      "copayFrames": "$20",
+      "frameAllowance": "$250",
+      "contactLensAllowance": "$200",
+      "examFrequency": "Every 12 months"
+    },
+    "backFields": {
+      "claimsAddress": "Horizon Vision, PO Box 820, Newark, NJ 07101-0820",
+      "claimsPhone": "1-800-355-2583",
+      "memberServicesPhone": "1-800-355-2583",
+      "providerSearchUrl": "www.horizonblue.com/find-an-eye-doctor",
+      "websiteUrl": "www.horizonblue.com",
+      "emergencyNotice": "For eye emergencies, contact your eye care provider or visit the nearest emergency room."
+    }
+  }
+]

@@ -1,0 +1,186 @@
+{
+  "pageTitle": "Get Care",
+  "pageDescription": "Find the care you need — from in-network providers and telehealth visits to behavioral health support.",
+  "leavingSiteDisclaimer": {
+    "title": "You are leaving the Horizon Member Portal",
+    "message": "You are now leaving the Horizon Blue Cross Blue Shield of New Jersey website. The website you are about to visit is operated by a third party. Horizon BCBSNJ does not control or guarantee the accuracy, relevance, or completeness of information on third-party websites.",
+    "confirmButtonLabel": "Continue",
+    "cancelButtonLabel": "Stay on this site"
+  },
+  "sections": [
+    {
+      "id": "find-care-cost",
+      "title": "Find Care & Cost",
+      "description": "Search for in-network doctors, specialists, hospitals, and other healthcare providers. Compare costs and quality ratings to make informed decisions about your care.",
+      "icon": "search",
+      "externalLink": {
+        "url": "https://www.horizonblue.com/find-a-doctor",
+        "label": "Find a Doctor or Provider",
+        "description": "Search the Horizon provider directory to find in-network doctors, specialists, and facilities near you.",
+        "isExternal": true
+      },
+      "features": [
+        {
+          "id": "fc-provider-search",
+          "title": "Provider Search",
+          "description": "Find in-network doctors, specialists, and other healthcare providers by name, specialty, or location."
+        },
+        {
+          "id": "fc-facility-search",
+          "title": "Facility Search",
+          "description": "Locate hospitals, urgent care centers, labs, imaging centers, and other facilities near you."
+        },
+        {
+          "id": "fc-cost-estimator",
+          "title": "Cost Estimator",
+          "description": "Get estimated costs for common procedures and services based on your plan benefits and provider network."
+        },
+        {
+          "id": "fc-quality-ratings",
+          "title": "Quality Ratings",
+          "description": "Review quality ratings and patient satisfaction scores to help you choose the right provider."
+        }
+      ],
+      "tips": [
+        "Always verify that your provider is in-network before scheduling an appointment to avoid higher out-of-pocket costs.",
+        "Use the cost estimator tool to compare prices for common procedures across different facilities.",
+        "Check if your plan requires a referral from your primary care physician before seeing a specialist."
+      ]
+    },
+    {
+      "id": "telemedicine",
+      "title": "Telemedicine",
+      "description": "Connect with a healthcare provider from the comfort of your home. Telemedicine visits are available 24/7 for non-emergency medical needs.",
+      "icon": "telehealth",
+      "guidanceText": "Telemedicine allows you to see a doctor via video or phone for many common health concerns without leaving your home. It's a convenient and cost-effective option for non-emergency care, including cold and flu symptoms, allergies, skin conditions, minor injuries, prescription refills, and more. Your Horizon plan covers telemedicine visits at the same cost as an in-office visit with your primary care provider.",
+      "features": [
+        {
+          "id": "tm-video-visit",
+          "title": "Video Visits",
+          "description": "See a board-certified doctor face-to-face through a secure video connection on your computer, tablet, or smartphone."
+        },
+        {
+          "id": "tm-phone-visit",
+          "title": "Phone Visits",
+          "description": "Speak with a healthcare provider by phone when video is not available or preferred."
+        },
+        {
+          "id": "tm-messaging",
+          "title": "Secure Messaging",
+          "description": "Send messages to your provider for non-urgent questions, prescription refill requests, and follow-up care."
+        }
+      ],
+      "faqs": [
+        {
+          "id": "tm-faq-1",
+          "question": "What conditions can be treated through telemedicine?",
+          "answer": "Telemedicine is ideal for many common conditions including cold and flu, allergies, sinus infections, rashes and skin conditions, urinary tract infections, eye infections (pink eye), minor aches and pains, anxiety and depression, prescription refills, and follow-up visits. For emergencies, always call 911 or go to the nearest emergency room."
+        },
+        {
+          "id": "tm-faq-2",
+          "question": "How much does a telemedicine visit cost?",
+          "answer": "Telemedicine visits are covered under your Horizon plan at the same cost-share as a primary care office visit. For most PPO plans, this is a $20 copay. For HMO plans, this is typically a $15 copay. Check your plan benefits for your specific cost."
+        },
+        {
+          "id": "tm-faq-3",
+          "question": "How do I start a telemedicine visit?",
+          "answer": "You can start a telemedicine visit by logging into the Horizon Member Portal and selecting 'Telemedicine' from the Get Care menu. You'll be connected with an available provider, usually within 15 minutes. You can also download the Horizon telemedicine app for easy access from your mobile device."
+        },
+        {
+          "id": "tm-faq-4",
+          "question": "Can I get prescriptions through telemedicine?",
+          "answer": "Yes, telemedicine providers can prescribe medications when medically appropriate. Prescriptions will be sent electronically to the pharmacy of your choice. Note that certain controlled substances may not be prescribed through telemedicine per state regulations."
+        },
+        {
+          "id": "tm-faq-5",
+          "question": "Is telemedicine available 24/7?",
+          "answer": "Yes, telemedicine services are available 24 hours a day, 7 days a week, including holidays. You can connect with a provider anytime you need non-emergency medical care."
+        }
+      ]
+    },
+    {
+      "id": "behavioral-health",
+      "title": "Behavioral Health",
+      "description": "Access mental health and substance use disorder services. Find therapists, counselors, psychiatrists, and support programs covered by your plan.",
+      "icon": "wellness",
+      "guidanceText": "Your mental health is just as important as your physical health. Horizon provides comprehensive behavioral health coverage including therapy, counseling, psychiatric services, and substance use disorder treatment. All behavioral health services are covered at parity with medical services under your plan. You do not need a referral to see a behavioral health provider, and your visits are confidential. If you or someone you know is in crisis, please call the 988 Suicide & Crisis Lifeline by dialing 988, or text HOME to 741741 to reach the Crisis Text Line.",
+      "features": [
+        {
+          "id": "bh-therapy",
+          "title": "Therapy & Counseling",
+          "description": "Find licensed therapists and counselors for individual, couples, family, and group therapy sessions."
+        },
+        {
+          "id": "bh-psychiatry",
+          "title": "Psychiatry Services",
+          "description": "Connect with psychiatrists for medication management, evaluations, and ongoing psychiatric care."
+        },
+        {
+          "id": "bh-substance-use",
+          "title": "Substance Use Disorder",
+          "description": "Access treatment programs, detox services, and ongoing support for substance use disorders."
+        },
+        {
+          "id": "bh-crisis",
+          "title": "Crisis Support",
+          "description": "Get immediate help in a mental health crisis. Available 24/7 through the 988 Suicide & Crisis Lifeline."
+        }
+      ],
+      "crisisResources": [
+        {
+          "id": "cr-988",
+          "name": "988 Suicide & Crisis Lifeline",
+          "contact": "988",
+          "type": "phone",
+          "description": "Call or text 988 for free, confidential support 24/7."
+        },
+        {
+          "id": "cr-crisis-text",
+          "name": "Crisis Text Line",
+          "contact": "Text HOME to 741741",
+          "type": "text",
+          "description": "Free, 24/7 crisis support via text message."
+        },
+        {
+          "id": "cr-horizon-bh",
+          "name": "Horizon Behavioral Health Line",
+          "contact": "1-800-626-2212",
+          "type": "phone",
+          "description": "Speak with a Horizon behavioral health specialist for referrals and support."
+        }
+      ],
+      "faqs": [
+        {
+          "id": "bh-faq-1",
+          "question": "Do I need a referral to see a behavioral health provider?",
+          "answer": "No, you do not need a referral to see a behavioral health provider. You can schedule an appointment directly with any in-network therapist, counselor, or psychiatrist. However, we recommend checking that your provider is in-network to ensure the lowest out-of-pocket cost."
+        },
+        {
+          "id": "bh-faq-2",
+          "question": "How much does a behavioral health visit cost?",
+          "answer": "Outpatient behavioral health visits are covered at the same cost-share as a specialist visit under your plan. For most PPO plans, this is a $40 copay per session. For HMO plans, this is typically a $30 copay. Inpatient behavioral health services are subject to your plan's hospital coinsurance rate."
+        },
+        {
+          "id": "bh-faq-3",
+          "question": "Are telehealth behavioral health visits available?",
+          "answer": "Yes, many behavioral health providers offer telehealth visits via video or phone. Telehealth behavioral health visits are covered at the same cost as in-person visits. This is a convenient option if you prefer to receive care from home or have difficulty traveling to an office."
+        },
+        {
+          "id": "bh-faq-4",
+          "question": "Is my behavioral health information kept confidential?",
+          "answer": "Yes, all behavioral health records are kept strictly confidential in accordance with HIPAA regulations and state privacy laws. Your behavioral health information is not shared with your employer or other parties without your explicit written consent."
+        },
+        {
+          "id": "bh-faq-5",
+          "question": "What types of behavioral health services are covered?",
+          "answer": "Your plan covers a wide range of behavioral health services including individual therapy, group therapy, family and couples counseling, psychiatric evaluations, medication management, intensive outpatient programs (IOP), partial hospitalization programs (PHP), inpatient psychiatric care, detoxification services, and substance use disorder treatment programs."
+        },
+        {
+          "id": "bh-faq-6",
+          "question": "How do I find a behavioral health provider?",
+          "answer": "You can find in-network behavioral health providers by using the Find a Doctor tool on the Horizon website, calling the Horizon Behavioral Health Line at 1-800-626-2212, or asking your primary care physician for a recommendation. Our behavioral health specialists can also help match you with a provider based on your specific needs."
+        }
+      ]
+    }
+  ]
+}

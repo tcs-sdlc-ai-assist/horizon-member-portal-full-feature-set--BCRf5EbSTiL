@@ -1,0 +1,1114 @@
+[
+  {
+    "id": "CLM-001",
+    "claimNumber": "HZN-2024-00012345",
+    "type": "medical",
+    "patient": "John Doe",
+    "memberId": "HBM-100234567",
+    "provider": {
+      "name": "Dr. Sarah Mitchell",
+      "npi": "1234567890",
+      "specialty": "Internal Medicine",
+      "address": "100 Medical Center Dr, Newark, NJ 07101"
+    },
+    "billedAmount": 450.00,
+    "allowedAmount": 380.00,
+    "planPaid": 304.00,
+    "whatYouOwe": 76.00,
+    "status": "approved",
+    "serviceDate": "2024-09-15",
+    "processedDate": "2024-09-28",
+    "submittedDate": "2024-09-18",
+    "claimType": "Professional",
+    "diagnosisCodes": ["Z00.00"],
+    "lineItems": [
+      {
+        "id": "LI-001-1",
+        "procedureCode": "99213",
+        "description": "Office visit - Established patient, moderate complexity",
+        "serviceDate": "2024-09-15",
+        "billedAmount": 250.00,
+        "allowedAmount": 210.00,
+        "planPaid": 168.00,
+        "memberResponsibility": 42.00,
+        "status": "approved"
+      },
+      {
+        "id": "LI-001-2",
+        "procedureCode": "36415",
+        "description": "Routine venipuncture for blood draw",
+        "serviceDate": "2024-09-15",
+        "billedAmount": 50.00,
+        "allowedAmount": 40.00,
+        "planPaid": 32.00,
+        "memberResponsibility": 8.00,
+        "status": "approved"
+      },
+      {
+        "id": "LI-001-3",
+        "procedureCode": "80053",
+        "description": "Comprehensive metabolic panel",
+        "serviceDate": "2024-09-15",
+        "billedAmount": 150.00,
+        "allowedAmount": 130.00,
+        "planPaid": 104.00,
+        "memberResponsibility": 26.00,
+        "status": "approved"
+      }
+    ],
+    "eobDocumentId": "DOC-EOB-001",
+    "notes": ""
+  },
+  {
+    "id": "CLM-002",
+    "claimNumber": "HZN-2024-00012390",
+    "type": "dental",
+    "patient": "John Doe",
+    "memberId": "HBM-100234567",
+    "provider": {
+      "name": "Dr. Robert Chen",
+      "npi": "2345678901",
+      "specialty": "General Dentistry",
+      "address": "250 Smile Way, Newark, NJ 07102"
+    },
+    "billedAmount": 320.00,
+    "allowedAmount": 280.00,
+    "planPaid": 224.00,
+    "whatYouOwe": 56.00,
+    "status": "approved",
+    "serviceDate": "2024-09-10",
+    "processedDate": "2024-09-22",
+    "submittedDate": "2024-09-12",
+    "claimType": "Dental",
+    "diagnosisCodes": ["K02.9"],
+    "lineItems": [
+      {
+        "id": "LI-002-1",
+        "procedureCode": "D0120",
+        "description": "Periodic oral evaluation",
+        "serviceDate": "2024-09-10",
+        "billedAmount": 65.00,
+        "allowedAmount": 55.00,
+        "planPaid": 55.00,
+        "memberResponsibility": 0.00,
+        "status": "approved"
+      },
+      {
+        "id": "LI-002-2",
+        "procedureCode": "D1110",
+        "description": "Prophylaxis - adult cleaning",
+        "serviceDate": "2024-09-10",
+        "billedAmount": 105.00,
+        "allowedAmount": 95.00,
+        "planPaid": 95.00,
+        "memberResponsibility": 0.00,
+        "status": "approved"
+      },
+      {
+        "id": "LI-002-3",
+        "procedureCode": "D0274",
+        "description": "Bitewing radiographs - four films",
+        "serviceDate": "2024-09-10",
+        "billedAmount": 75.00,
+        "allowedAmount": 65.00,
+        "planPaid": 52.00,
+        "memberResponsibility": 13.00,
+        "status": "approved"
+      },
+      {
+        "id": "LI-002-4",
+        "procedureCode": "D1206",
+        "description": "Topical fluoride varnish",
+        "serviceDate": "2024-09-10",
+        "billedAmount": 75.00,
+        "allowedAmount": 65.00,
+        "planPaid": 22.00,
+        "memberResponsibility": 43.00,
+        "status": "approved"
+      }
+    ],
+    "eobDocumentId": "DOC-EOB-002",
+    "notes": ""
+  },
+  {
+    "id": "CLM-003",
+    "claimNumber": "HZN-2024-00012456",
+    "type": "medical",
+    "patient": "John Doe",
+    "memberId": "HBM-100234567",
+    "provider": {
+      "name": "Newark General Hospital",
+      "npi": "3456789012",
+      "specialty": "Emergency Medicine",
+      "address": "500 Hospital Blvd, Newark, NJ 07103"
+    },
+    "billedAmount": 3250.00,
+    "allowedAmount": 2800.00,
+    "planPaid": 2240.00,
+    "whatYouOwe": 560.00,
+    "status": "in_review",
+    "serviceDate": "2024-10-02",
+    "processedDate": null,
+    "submittedDate": "2024-10-05",
+    "claimType": "Facility",
+    "diagnosisCodes": ["S93.401A", "M79.671"],
+    "lineItems": [
+      {
+        "id": "LI-003-1",
+        "procedureCode": "99283",
+        "description": "Emergency department visit - moderate severity",
+        "serviceDate": "2024-10-02",
+        "billedAmount": 1500.00,
+        "allowedAmount": 1300.00,
+        "planPaid": 1040.00,
+        "memberResponsibility": 260.00,
+        "status": "in_review"
+      },
+      {
+        "id": "LI-003-2",
+        "procedureCode": "73610",
+        "description": "X-ray ankle, complete",
+        "serviceDate": "2024-10-02",
+        "billedAmount": 350.00,
+        "allowedAmount": 300.00,
+        "planPaid": 240.00,
+        "memberResponsibility": 60.00,
+        "status": "in_review"
+      },
+      {
+        "id": "LI-003-3",
+        "procedureCode": "29540",
+        "description": "Strapping of ankle",
+        "serviceDate": "2024-10-02",
+        "billedAmount": 400.00,
+        "allowedAmount": 350.00,
+        "planPaid": 280.00,
+        "memberResponsibility": 70.00,
+        "status": "in_review"
+      },
+      {
+        "id": "LI-003-4",
+        "procedureCode": "99070",
+        "description": "Supplies and materials provided",
+        "serviceDate": "2024-10-02",
+        "billedAmount": 1000.00,
+        "allowedAmount": 850.00,
+        "planPaid": 680.00,
+        "memberResponsibility": 170.00,
+        "status": "in_review"
+      }
+    ],
+    "eobDocumentId": null,
+    "notes": "Claim is currently under review. Additional documentation may be requested."
+  },
+  {
+    "id": "CLM-004",
+    "claimNumber": "HZN-2024-00012501",
+    "type": "pharmacy",
+    "patient": "John Doe",
+    "memberId": "HBM-100234567",
+    "provider": {
+      "name": "CVS Pharmacy #4521",
+      "npi": "4567890123",
+      "specialty": "Pharmacy",
+      "address": "789 Broad St, Newark, NJ 07102"
+    },
+    "billedAmount": 185.00,
+    "allowedAmount": 185.00,
+    "planPaid": 155.00,
+    "whatYouOwe": 30.00,
+    "status": "approved",
+    "serviceDate": "2024-10-05",
+    "processedDate": "2024-10-06",
+    "submittedDate": "2024-10-05",
+    "claimType": "Pharmacy",
+    "diagnosisCodes": ["I10"],
+    "lineItems": [
+      {
+        "id": "LI-004-1",
+        "procedureCode": "NDC-12345",
+        "description": "Lisinopril 10mg tablets - 90 day supply",
+        "serviceDate": "2024-10-05",
+        "billedAmount": 85.00,
+        "allowedAmount": 85.00,
+        "planPaid": 70.00,
+        "memberResponsibility": 15.00,
+        "status": "approved"
+      },
+      {
+        "id": "LI-004-2",
+        "procedureCode": "NDC-67890",
+        "description": "Atorvastatin 20mg tablets - 90 day supply",
+        "serviceDate": "2024-10-05",
+        "billedAmount": 100.00,
+        "allowedAmount": 100.00,
+        "planPaid": 85.00,
+        "memberResponsibility": 15.00,
+        "status": "approved"
+      }
+    ],
+    "eobDocumentId": "DOC-EOB-004",
+    "notes": ""
+  },
+  {
+    "id": "CLM-005",
+    "claimNumber": "HZN-2024-00012567",
+    "type": "vision",
+    "patient": "John Doe",
+    "memberId": "HBM-100234567",
+    "provider": {
+      "name": "Dr. Lisa Park",
+      "npi": "5678901234",
+      "specialty": "Optometry",
+      "address": "321 Vision Lane, Jersey City, NJ 07302"
+    },
+    "billedAmount": 475.00,
+    "allowedAmount": 400.00,
+    "planPaid": 280.00,
+    "whatYouOwe": 120.00,
+    "status": "approved",
+    "serviceDate": "2024-08-20",
+    "processedDate": "2024-09-03",
+    "submittedDate": "2024-08-22",
+    "claimType": "Professional",
+    "diagnosisCodes": ["H52.13"],
+    "lineItems": [
+      {
+        "id": "LI-005-1",
+        "procedureCode": "92004",
+        "description": "Comprehensive eye exam - new patient",
+        "serviceDate": "2024-08-20",
+        "billedAmount": 175.00,
+        "allowedAmount": 150.00,
+        "planPaid": 120.00,
+        "memberResponsibility": 30.00,
+        "status": "approved"
+      },
+      {
+        "id": "LI-005-2",
+        "procedureCode": "92015",
+        "description": "Refraction determination",
+        "serviceDate": "2024-08-20",
+        "billedAmount": 50.00,
+        "allowedAmount": 50.00,
+        "planPaid": 40.00,
+        "memberResponsibility": 10.00,
+        "status": "approved"
+      },
+      {
+        "id": "LI-005-3",
+        "procedureCode": "V2020",
+        "description": "Frames - standard selection",
+        "serviceDate": "2024-08-20",
+        "billedAmount": 250.00,
+        "allowedAmount": 200.00,
+        "planPaid": 120.00,
+        "memberResponsibility": 80.00,
+        "status": "approved"
+      }
+    ],
+    "eobDocumentId": "DOC-EOB-005",
+    "notes": ""
+  },
+  {
+    "id": "CLM-006",
+    "claimNumber": "HZN-2024-00012610",
+    "type": "medical",
+    "patient": "John Doe",
+    "memberId": "HBM-100234567",
+    "provider": {
+      "name": "Dr. James Wilson",
+      "npi": "6789012345",
+      "specialty": "Dermatology",
+      "address": "45 Skin Care Blvd, Newark, NJ 07104"
+    },
+    "billedAmount": 650.00,
+    "allowedAmount": 520.00,
+    "planPaid": 0.00,
+    "whatYouOwe": 520.00,
+    "status": "denied",
+    "serviceDate": "2024-08-05",
+    "processedDate": "2024-08-20",
+    "submittedDate": "2024-08-08",
+    "claimType": "Professional",
+    "diagnosisCodes": ["L70.0"],
+    "lineItems": [
+      {
+        "id": "LI-006-1",
+        "procedureCode": "99214",
+        "description": "Office visit - Established patient, high complexity",
+        "serviceDate": "2024-08-05",
+        "billedAmount": 300.00,
+        "allowedAmount": 250.00,
+        "planPaid": 0.00,
+        "memberResponsibility": 250.00,
+        "status": "denied"
+      },
+      {
+        "id": "LI-006-2",
+        "procedureCode": "17110",
+        "description": "Destruction of benign lesions, up to 14",
+        "serviceDate": "2024-08-05",
+        "billedAmount": 350.00,
+        "allowedAmount": 270.00,
+        "planPaid": 0.00,
+        "memberResponsibility": 270.00,
+        "status": "denied"
+      }
+    ],
+    "eobDocumentId": "DOC-EOB-006",
+    "notes": "Denied: Prior authorization was required but not obtained. You may appeal this decision within 180 days."
+  },
+  {
+    "id": "CLM-007",
+    "claimNumber": "HZN-2024-00012678",
+    "type": "medical",
+    "patient": "John Doe",
+    "memberId": "HBM-100234567",
+    "provider": {
+      "name": "Hudson Physical Therapy",
+      "npi": "7890123456",
+      "specialty": "Physical Therapy",
+      "address": "88 Rehab Center Rd, Newark, NJ 07105"
+    },
+    "billedAmount": 275.00,
+    "allowedAmount": 240.00,
+    "planPaid": 192.00,
+    "whatYouOwe": 48.00,
+    "status": "approved",
+    "serviceDate": "2024-09-25",
+    "processedDate": "2024-10-08",
+    "submittedDate": "2024-09-27",
+    "claimType": "Professional",
+    "diagnosisCodes": ["M54.5"],
+    "lineItems": [
+      {
+        "id": "LI-007-1",
+        "procedureCode": "97110",
+        "description": "Therapeutic exercises, 30 minutes",
+        "serviceDate": "2024-09-25",
+        "billedAmount": 150.00,
+        "allowedAmount": 130.00,
+        "planPaid": 104.00,
+        "memberResponsibility": 26.00,
+        "status": "approved"
+      },
+      {
+        "id": "LI-007-2",
+        "procedureCode": "97140",
+        "description": "Manual therapy techniques, 15 minutes",
+        "serviceDate": "2024-09-25",
+        "billedAmount": 125.00,
+        "allowedAmount": 110.00,
+        "planPaid": 88.00,
+        "memberResponsibility": 22.00,
+        "status": "approved"
+      }
+    ],
+    "eobDocumentId": "DOC-EOB-007",
+    "notes": ""
+  },
+  {
+    "id": "CLM-008",
+    "claimNumber": "HZN-2024-00012720",
+    "type": "medical",
+    "patient": "John Doe",
+    "memberId": "HBM-100234567",
+    "provider": {
+      "name": "Dr. Angela Torres",
+      "npi": "8901234567",
+      "specialty": "Cardiology",
+      "address": "200 Heart Health Ave, Newark, NJ 07106"
+    },
+    "billedAmount": 1200.00,
+    "allowedAmount": 980.00,
+    "planPaid": 784.00,
+    "whatYouOwe": 196.00,
+    "status": "pending",
+    "serviceDate": "2024-10-10",
+    "processedDate": null,
+    "submittedDate": "2024-10-12",
+    "claimType": "Professional",
+    "diagnosisCodes": ["I25.10", "R00.0"],
+    "lineItems": [
+      {
+        "id": "LI-008-1",
+        "procedureCode": "99215",
+        "description": "Office visit - Established patient, highest complexity",
+        "serviceDate": "2024-10-10",
+        "billedAmount": 400.00,
+        "allowedAmount": 330.00,
+        "planPaid": 264.00,
+        "memberResponsibility": 66.00,
+        "status": "pending"
+      },
+      {
+        "id": "LI-008-2",
+        "procedureCode": "93000",
+        "description": "Electrocardiogram (ECG/EKG) with interpretation",
+        "serviceDate": "2024-10-10",
+        "billedAmount": 300.00,
+        "allowedAmount": 250.00,
+        "planPaid": 200.00,
+        "memberResponsibility": 50.00,
+        "status": "pending"
+      },
+      {
+        "id": "LI-008-3",
+        "procedureCode": "93306",
+        "description": "Echocardiography, transthoracic, complete",
+        "serviceDate": "2024-10-10",
+        "billedAmount": 500.00,
+        "allowedAmount": 400.00,
+        "planPaid": 320.00,
+        "memberResponsibility": 80.00,
+        "status": "pending"
+      }
+    ],
+    "eobDocumentId": null,
+    "notes": "Claim is pending processing. Estimated amounts shown."
+  },
+  {
+    "id": "CLM-009",
+    "claimNumber": "HZN-2024-00012789",
+    "type": "pharmacy",
+    "patient": "John Doe",
+    "memberId": "HBM-100234567",
+    "provider": {
+      "name": "Walgreens Pharmacy #7832",
+      "npi": "9012345678",
+      "specialty": "Pharmacy",
+      "address": "456 Market St, Newark, NJ 07107"
+    },
+    "billedAmount": 45.00,
+    "allowedAmount": 45.00,
+    "planPaid": 35.00,
+    "whatYouOwe": 10.00,
+    "status": "approved",
+    "serviceDate": "2024-10-01",
+    "processedDate": "2024-10-02",
+    "submittedDate": "2024-10-01",
+    "claimType": "Pharmacy",
+    "diagnosisCodes": ["J30.1"],
+    "lineItems": [
+      {
+        "id": "LI-009-1",
+        "procedureCode": "NDC-11223",
+        "description": "Cetirizine 10mg tablets - 30 day supply",
+        "serviceDate": "2024-10-01",
+        "billedAmount": 45.00,
+        "allowedAmount": 45.00,
+        "planPaid": 35.00,
+        "memberResponsibility": 10.00,
+        "status": "approved"
+      }
+    ],
+    "eobDocumentId": "DOC-EOB-009",
+    "notes": ""
+  },
+  {
+    "id": "CLM-010",
+    "claimNumber": "HZN-2024-00012834",
+    "type": "medical",
+    "patient": "John Doe",
+    "memberId": "HBM-100234567",
+    "provider": {
+      "name": "Garden State Imaging Center",
+      "npi": "0123456789",
+      "specialty": "Radiology",
+      "address": "600 Diagnostic Dr, Newark, NJ 07108"
+    },
+    "billedAmount": 2100.00,
+    "allowedAmount": 1750.00,
+    "planPaid": 1400.00,
+    "whatYouOwe": 350.00,
+    "status": "partially_approved",
+    "serviceDate": "2024-09-05",
+    "processedDate": "2024-09-20",
+    "submittedDate": "2024-09-08",
+    "claimType": "Facility",
+    "diagnosisCodes": ["M54.5", "M51.16"],
+    "lineItems": [
+      {
+        "id": "LI-010-1",
+        "procedureCode": "72148",
+        "description": "MRI lumbar spine without contrast",
+        "serviceDate": "2024-09-05",
+        "billedAmount": 1800.00,
+        "allowedAmount": 1500.00,
+        "planPaid": 1200.00,
+        "memberResponsibility": 300.00,
+        "status": "approved"
+      },
+      {
+        "id": "LI-010-2",
+        "procedureCode": "72149",
+        "description": "MRI lumbar spine with contrast",
+        "serviceDate": "2024-09-05",
+        "billedAmount": 300.00,
+        "allowedAmount": 250.00,
+        "planPaid": 200.00,
+        "memberResponsibility": 50.00,
+        "status": "denied"
+      }
+    ],
+    "eobDocumentId": "DOC-EOB-010",
+    "notes": "Contrast portion denied as not medically necessary based on initial findings."
+  },
+  {
+    "id": "CLM-011",
+    "claimNumber": "HZN-2024-00012890",
+    "type": "dental",
+    "patient": "John Doe",
+    "memberId": "HBM-100234567",
+    "provider": {
+      "name": "Dr. Michael Patel",
+      "npi": "1122334455",
+      "specialty": "Oral Surgery",
+      "address": "77 Dental Plaza, Jersey City, NJ 07304"
+    },
+    "billedAmount": 1850.00,
+    "allowedAmount": 1600.00,
+    "planPaid": 800.00,
+    "whatYouOwe": 800.00,
+    "status": "approved",
+    "serviceDate": "2024-07-18",
+    "processedDate": "2024-08-01",
+    "submittedDate": "2024-07-20",
+    "claimType": "Dental",
+    "diagnosisCodes": ["K01.0"],
+    "lineItems": [
+      {
+        "id": "LI-011-1",
+        "procedureCode": "D7240",
+        "description": "Removal of impacted tooth - completely bony",
+        "serviceDate": "2024-07-18",
+        "billedAmount": 850.00,
+        "allowedAmount": 750.00,
+        "planPaid": 375.00,
+        "memberResponsibility": 375.00,
+        "status": "approved"
+      },
+      {
+        "id": "LI-011-2",
+        "procedureCode": "D7241",
+        "description": "Removal of impacted tooth - completely bony with complications",
+        "serviceDate": "2024-07-18",
+        "billedAmount": 1000.00,
+        "allowedAmount": 850.00,
+        "planPaid": 425.00,
+        "memberResponsibility": 425.00,
+        "status": "approved"
+      }
+    ],
+    "eobDocumentId": "DOC-EOB-011",
+    "notes": "Plan pays 50% for major dental services."
+  },
+  {
+    "id": "CLM-012",
+    "claimNumber": "HZN-2024-00012945",
+    "type": "medical",
+    "patient": "John Doe",
+    "memberId": "HBM-100234567",
+    "provider": {
+      "name": "Dr. Sarah Mitchell",
+      "npi": "1234567890",
+      "specialty": "Internal Medicine",
+      "address": "100 Medical Center Dr, Newark, NJ 07101"
+    },
+    "billedAmount": 200.00,
+    "allowedAmount": 175.00,
+    "planPaid": 175.00,
+    "whatYouOwe": 0.00,
+    "status": "approved",
+    "serviceDate": "2024-06-12",
+    "processedDate": "2024-06-25",
+    "submittedDate": "2024-06-14",
+    "claimType": "Professional",
+    "diagnosisCodes": ["Z00.00"],
+    "lineItems": [
+      {
+        "id": "LI-012-1",
+        "procedureCode": "99395",
+        "description": "Preventive visit - Established patient, 18-39 years",
+        "serviceDate": "2024-06-12",
+        "billedAmount": 200.00,
+        "allowedAmount": 175.00,
+        "planPaid": 175.00,
+        "memberResponsibility": 0.00,
+        "status": "approved"
+      }
+    ],
+    "eobDocumentId": "DOC-EOB-012",
+    "notes": "Preventive care - covered at 100% with no member cost share."
+  },
+  {
+    "id": "CLM-013",
+    "claimNumber": "HZN-2024-00013001",
+    "type": "medical",
+    "patient": "John Doe",
+    "memberId": "HBM-100234567",
+    "provider": {
+      "name": "BioReference Laboratories",
+      "npi": "2233445566",
+      "specialty": "Laboratory",
+      "address": "481 Edward H. Ross Dr, Elmwood Park, NJ 07407"
+    },
+    "billedAmount": 580.00,
+    "allowedAmount": 420.00,
+    "planPaid": 336.00,
+    "whatYouOwe": 84.00,
+    "status": "approved",
+    "serviceDate": "2024-09-16",
+    "processedDate": "2024-10-01",
+    "submittedDate": "2024-09-18",
+    "claimType": "Professional",
+    "diagnosisCodes": ["E11.65", "E78.5"],
+    "lineItems": [
+      {
+        "id": "LI-013-1",
+        "procedureCode": "80053",
+        "description": "Comprehensive metabolic panel",
+        "serviceDate": "2024-09-16",
+        "billedAmount": 150.00,
+        "allowedAmount": 110.00,
+        "planPaid": 88.00,
+        "memberResponsibility": 22.00,
+        "status": "approved"
+      },
+      {
+        "id": "LI-013-2",
+        "procedureCode": "83036",
+        "description": "Hemoglobin A1c",
+        "serviceDate": "2024-09-16",
+        "billedAmount": 120.00,
+        "allowedAmount": 90.00,
+        "planPaid": 72.00,
+        "memberResponsibility": 18.00,
+        "status": "approved"
+      },
+      {
+        "id": "LI-013-3",
+        "procedureCode": "80061",
+        "description": "Lipid panel",
+        "serviceDate": "2024-09-16",
+        "billedAmount": 130.00,
+        "allowedAmount": 95.00,
+        "planPaid": 76.00,
+        "memberResponsibility": 19.00,
+        "status": "approved"
+      },
+      {
+        "id": "LI-013-4",
+        "procedureCode": "85025",
+        "description": "Complete blood count (CBC) with differential",
+        "serviceDate": "2024-09-16",
+        "billedAmount": 80.00,
+        "allowedAmount": 60.00,
+        "planPaid": 48.00,
+        "memberResponsibility": 12.00,
+        "status": "approved"
+      },
+      {
+        "id": "LI-013-5",
+        "procedureCode": "84443",
+        "description": "Thyroid stimulating hormone (TSH)",
+        "serviceDate": "2024-09-16",
+        "billedAmount": 100.00,
+        "allowedAmount": 65.00,
+        "planPaid": 52.00,
+        "memberResponsibility": 13.00,
+        "status": "approved"
+      }
+    ],
+    "eobDocumentId": "DOC-EOB-013",
+    "notes": ""
+  },
+  {
+    "id": "CLM-014",
+    "claimNumber": "HZN-2024-00013055",
+    "type": "medical",
+    "patient": "John Doe",
+    "memberId": "HBM-100234567",
+    "provider": {
+      "name": "Dr. Karen Nguyen",
+      "npi": "3344556677",
+      "specialty": "Orthopedics",
+      "address": "150 Bone & Joint Way, Newark, NJ 07109"
+    },
+    "billedAmount": 890.00,
+    "allowedAmount": 750.00,
+    "planPaid": 0.00,
+    "whatYouOwe": 750.00,
+    "status": "denied",
+    "serviceDate": "2024-07-30",
+    "processedDate": "2024-08-15",
+    "submittedDate": "2024-08-02",
+    "claimType": "Professional",
+    "diagnosisCodes": ["M25.561"],
+    "lineItems": [
+      {
+        "id": "LI-014-1",
+        "procedureCode": "20610",
+        "description": "Arthrocentesis, aspiration and/or injection, major joint",
+        "serviceDate": "2024-07-30",
+        "billedAmount": 490.00,
+        "allowedAmount": 400.00,
+        "planPaid": 0.00,
+        "memberResponsibility": 400.00,
+        "status": "denied"
+      },
+      {
+        "id": "LI-014-2",
+        "procedureCode": "99213",
+        "description": "Office visit - Established patient, moderate complexity",
+        "serviceDate": "2024-07-30",
+        "billedAmount": 250.00,
+        "allowedAmount": 210.00,
+        "planPaid": 0.00,
+        "memberResponsibility": 210.00,
+        "status": "denied"
+      },
+      {
+        "id": "LI-014-3",
+        "procedureCode": "J3301",
+        "description": "Injection, triamcinolone acetonide",
+        "serviceDate": "2024-07-30",
+        "billedAmount": 150.00,
+        "allowedAmount": 140.00,
+        "planPaid": 0.00,
+        "memberResponsibility": 140.00,
+        "status": "denied"
+      }
+    ],
+    "eobDocumentId": "DOC-EOB-014",
+    "notes": "Denied: Service not covered under your current plan. You may appeal this decision within 180 days."
+  },
+  {
+    "id": "CLM-015",
+    "claimNumber": "HZN-2024-00013100",
+    "type": "medical",
+    "patient": "John Doe",
+    "memberId": "HBM-100234567",
+    "provider": {
+      "name": "Dr. Emily Rodriguez",
+      "npi": "4455667788",
+      "specialty": "Psychiatry",
+      "address": "300 Wellness Center Dr, Newark, NJ 07110"
+    },
+    "billedAmount": 350.00,
+    "allowedAmount": 300.00,
+    "planPaid": 240.00,
+    "whatYouOwe": 60.00,
+    "status": "approved",
+    "serviceDate": "2024-10-08",
+    "processedDate": "2024-10-18",
+    "submittedDate": "2024-10-10",
+    "claimType": "Professional",
+    "diagnosisCodes": ["F41.1"],
+    "lineItems": [
+      {
+        "id": "LI-015-1",
+        "procedureCode": "90834",
+        "description": "Psychotherapy, 45 minutes",
+        "serviceDate": "2024-10-08",
+        "billedAmount": 200.00,
+        "allowedAmount": 175.00,
+        "planPaid": 140.00,
+        "memberResponsibility": 35.00,
+        "status": "approved"
+      },
+      {
+        "id": "LI-015-2",
+        "procedureCode": "99213",
+        "description": "Medication management visit",
+        "serviceDate": "2024-10-08",
+        "billedAmount": 150.00,
+        "allowedAmount": 125.00,
+        "planPaid": 100.00,
+        "memberResponsibility": 25.00,
+        "status": "approved"
+      }
+    ],
+    "eobDocumentId": "DOC-EOB-015",
+    "notes": ""
+  },
+  {
+    "id": "CLM-016",
+    "claimNumber": "HZN-2024-00013150",
+    "type": "medical",
+    "patient": "John Doe",
+    "memberId": "HBM-100234567",
+    "provider": {
+      "name": "Urgent Care of New Jersey",
+      "npi": "5566778899",
+      "specialty": "Urgent Care",
+      "address": "222 Quick Care Ln, Jersey City, NJ 07306"
+    },
+    "billedAmount": 525.00,
+    "allowedAmount": 450.00,
+    "planPaid": 360.00,
+    "whatYouOwe": 90.00,
+    "status": "submitted",
+    "serviceDate": "2024-10-14",
+    "processedDate": null,
+    "submittedDate": "2024-10-15",
+    "claimType": "Professional",
+    "diagnosisCodes": ["J06.9"],
+    "lineItems": [
+      {
+        "id": "LI-016-1",
+        "procedureCode": "99203",
+        "description": "Office visit - New patient, low complexity",
+        "serviceDate": "2024-10-14",
+        "billedAmount": 275.00,
+        "allowedAmount": 230.00,
+        "planPaid": 184.00,
+        "memberResponsibility": 46.00,
+        "status": "submitted"
+      },
+      {
+        "id": "LI-016-2",
+        "procedureCode": "87880",
+        "description": "Rapid strep test",
+        "serviceDate": "2024-10-14",
+        "billedAmount": 75.00,
+        "allowedAmount": 65.00,
+        "planPaid": 52.00,
+        "memberResponsibility": 13.00,
+        "status": "submitted"
+      },
+      {
+        "id": "LI-016-3",
+        "procedureCode": "87804",
+        "description": "Rapid influenza test",
+        "serviceDate": "2024-10-14",
+        "billedAmount": 100.00,
+        "allowedAmount": 85.00,
+        "planPaid": 68.00,
+        "memberResponsibility": 17.00,
+        "status": "submitted"
+      },
+      {
+        "id": "LI-016-4",
+        "procedureCode": "94640",
+        "description": "Nebulizer treatment",
+        "serviceDate": "2024-10-14",
+        "billedAmount": 75.00,
+        "allowedAmount": 70.00,
+        "planPaid": 56.00,
+        "memberResponsibility": 14.00,
+        "status": "submitted"
+      }
+    ],
+    "eobDocumentId": null,
+    "notes": "Claim has been submitted and is awaiting processing."
+  },
+  {
+    "id": "CLM-017",
+    "claimNumber": "HZN-2024-00013200",
+    "type": "pharmacy",
+    "patient": "Maria Smith",
+    "memberId": "HBM-100987654",
+    "provider": {
+      "name": "Rite Aid Pharmacy #2190",
+      "npi": "6677889900",
+      "specialty": "Pharmacy",
+      "address": "900 Bergen Ave, Jersey City, NJ 07306"
+    },
+    "billedAmount": 320.00,
+    "allowedAmount": 320.00,
+    "planPaid": 270.00,
+    "whatYouOwe": 50.00,
+    "status": "approved",
+    "serviceDate": "2024-10-03",
+    "processedDate": "2024-10-04",
+    "submittedDate": "2024-10-03",
+    "claimType": "Pharmacy",
+    "diagnosisCodes": ["N94.6"],
+    "lineItems": [
+      {
+        "id": "LI-017-1",
+        "procedureCode": "NDC-33445",
+        "description": "Norethindrone 0.35mg tablets - 90 day supply",
+        "serviceDate": "2024-10-03",
+        "billedAmount": 120.00,
+        "allowedAmount": 120.00,
+        "planPaid": 120.00,
+        "memberResponsibility": 0.00,
+        "status": "approved"
+      },
+      {
+        "id": "LI-017-2",
+        "procedureCode": "NDC-55667",
+        "description": "Sertraline 50mg tablets - 90 day supply",
+        "serviceDate": "2024-10-03",
+        "billedAmount": 200.00,
+        "allowedAmount": 200.00,
+        "planPaid": 150.00,
+        "memberResponsibility": 50.00,
+        "status": "approved"
+      }
+    ],
+    "eobDocumentId": "DOC-EOB-017",
+    "notes": ""
+  },
+  {
+    "id": "CLM-018",
+    "claimNumber": "HZN-2024-00013250",
+    "type": "dental",
+    "patient": "Maria Smith",
+    "memberId": "HBM-100987654",
+    "provider": {
+      "name": "Dr. Robert Chen",
+      "npi": "2345678901",
+      "specialty": "General Dentistry",
+      "address": "250 Smile Way, Newark, NJ 07102"
+    },
+    "billedAmount": 1200.00,
+    "allowedAmount": 1050.00,
+    "planPaid": 525.00,
+    "whatYouOwe": 525.00,
+    "status": "appealed",
+    "serviceDate": "2024-08-28",
+    "processedDate": "2024-09-12",
+    "submittedDate": "2024-08-30",
+    "claimType": "Dental",
+    "diagnosisCodes": ["K04.0"],
+    "lineItems": [
+      {
+        "id": "LI-018-1",
+        "procedureCode": "D2750",
+        "description": "Crown - porcelain fused to high noble metal",
+        "serviceDate": "2024-08-28",
+        "billedAmount": 1200.00,
+        "allowedAmount": 1050.00,
+        "planPaid": 525.00,
+        "memberResponsibility": 525.00,
+        "status": "appealed"
+      }
+    ],
+    "eobDocumentId": "DOC-EOB-018",
+    "notes": "Appeal submitted on 09/25/2024. Under review by appeals department."
+  },
+  {
+    "id": "CLM-019",
+    "claimNumber": "HZN-2024-00013310",
+    "type": "vision",
+    "patient": "Maria Smith",
+    "memberId": "HBM-100987654",
+    "provider": {
+      "name": "LensCrafters #5540",
+      "npi": "7788990011",
+      "specialty": "Optometry",
+      "address": "Newport Centre Mall, Jersey City, NJ 07310"
+    },
+    "billedAmount": 550.00,
+    "allowedAmount": 480.00,
+    "planPaid": 330.00,
+    "whatYouOwe": 150.00,
+    "status": "approved",
+    "serviceDate": "2024-09-20",
+    "processedDate": "2024-10-05",
+    "submittedDate": "2024-09-22",
+    "claimType": "Professional",
+    "diagnosisCodes": ["H52.11"],
+    "lineItems": [
+      {
+        "id": "LI-019-1",
+        "procedureCode": "92014",
+        "description": "Comprehensive eye exam - established patient",
+        "serviceDate": "2024-09-20",
+        "billedAmount": 150.00,
+        "allowedAmount": 130.00,
+        "planPaid": 130.00,
+        "memberResponsibility": 0.00,
+        "status": "approved"
+      },
+      {
+        "id": "LI-019-2",
+        "procedureCode": "V2100",
+        "description": "Single vision lenses, per pair",
+        "serviceDate": "2024-09-20",
+        "billedAmount": 150.00,
+        "allowedAmount": 130.00,
+        "planPaid": 100.00,
+        "memberResponsibility": 30.00,
+        "status": "approved"
+      },
+      {
+        "id": "LI-019-3",
+        "procedureCode": "V2020",
+        "description": "Frames - premium selection",
+        "serviceDate": "2024-09-20",
+        "billedAmount": 250.00,
+        "allowedAmount": 220.00,
+        "planPaid": 100.00,
+        "memberResponsibility": 120.00,
+        "status": "approved"
+      }
+    ],
+    "eobDocumentId": "DOC-EOB-019",
+    "notes": "Frame allowance exceeded by $120.00."
+  },
+  {
+    "id": "CLM-020",
+    "claimNumber": "HZN-2024-00013375",
+    "type": "medical",
+    "patient": "Maria Smith",
+    "memberId": "HBM-100987654",
+    "provider": {
+      "name": "Dr. David Kim",
+      "npi": "8899001122",
+      "specialty": "Family Medicine",
+      "address": "55 Primary Care Blvd, Jersey City, NJ 07302"
+    },
+    "billedAmount": 180.00,
+    "allowedAmount": 160.00,
+    "planPaid": 160.00,
+    "whatYouOwe": 0.00,
+    "status": "approved",
+    "serviceDate": "2024-10-12",
+    "processedDate": "2024-10-22",
+    "submittedDate": "2024-10-14",
+    "claimType": "Professional",
+    "diagnosisCodes": ["Z23"],
+    "lineItems": [
+      {
+        "id": "LI-020-1",
+        "procedureCode": "90471",
+        "description": "Immunization administration",
+        "serviceDate": "2024-10-12",
+        "billedAmount": 30.00,
+        "allowedAmount": 25.00,
+        "planPaid": 25.00,
+        "memberResponsibility": 0.00,
+        "status": "approved"
+      },
+      {
+        "id": "LI-020-2",
+        "procedureCode": "90686",
+        "description": "Influenza vaccine, quadrivalent",
+        "serviceDate": "2024-10-12",
+        "billedAmount": 75.00,
+        "allowedAmount": 65.00,
+        "planPaid": 65.00,
+        "memberResponsibility": 0.00,
+        "status": "approved"
+      },
+      {
+        "id": "LI-020-3",
+        "procedureCode": "90715",
+        "description": "Tdap vaccine",
+        "serviceDate": "2024-10-12",
+        "billedAmount": 75.00,
+        "allowedAmount": 70.00,
+        "planPaid": 70.00,
+        "memberResponsibility": 0.00,
+        "status": "approved"
+      }
+    ],
+    "eobDocumentId": "DOC-EOB-020",
+    "notes": "Preventive immunizations - covered at 100% with no member cost share."
+  }
+]

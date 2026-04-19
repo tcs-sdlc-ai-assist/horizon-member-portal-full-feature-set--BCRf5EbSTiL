@@ -1,0 +1,82 @@
+{
+  "supportChannels": [
+    {
+      "id": "phone",
+      "label": "Call Us",
+      "description": "Speak with a member services representative for help with your plan, claims, or benefits.",
+      "contact": "1-800-355-2583",
+      "type": "phone",
+      "icon": "phone",
+      "hoursOfOperation": "Monday - Friday, 8:00 AM - 8:00 PM ET",
+      "available": true
+    },
+    {
+      "id": "chat",
+      "label": "Live Chat",
+      "description": "Chat online with a Horizon representative for quick answers to your questions.",
+      "contact": "https://www.horizonblue.com/chat",
+      "type": "url",
+      "icon": "chat",
+      "hoursOfOperation": "Monday - Friday, 8:00 AM - 8:00 PM ET",
+      "available": true
+    },
+    {
+      "id": "email",
+      "label": "Email Support",
+      "description": "Send us an email and we'll respond within 1-2 business days.",
+      "contact": "support@horizonblue.com",
+      "type": "email",
+      "icon": "email",
+      "hoursOfOperation": "Responses within 1-2 business days",
+      "available": true
+    },
+    {
+      "id": "nurse-line",
+      "label": "24/7 Nurse Line",
+      "description": "Speak with a registered nurse anytime for health-related questions and guidance.",
+      "contact": "1-800-624-2212",
+      "type": "phone",
+      "icon": "nurse",
+      "hoursOfOperation": "Available 24 hours a day, 7 days a week",
+      "available": true
+    },
+    {
+      "id": "mental-health",
+      "label": "Behavioral Health Line",
+      "description": "Speak with a behavioral health specialist for referrals and support.",
+      "contact": "1-800-626-2212",
+      "type": "phone",
+      "icon": "wellness",
+      "hoursOfOperation": "Monday - Friday, 8:00 AM - 8:00 PM ET",
+      "available": true
+    },
+    {
+      "id": "pharmacy",
+      "label": "Pharmacy Help Desk",
+      "description": "Get help with prescription coverage, mail order, and pharmacy-related questions.",
+      "contact": "1-800-700-2583",
+      "type": "phone",
+      "icon": "prescriptions",
+      "hoursOfOperation": "Monday - Friday, 8:00 AM - 8:00 PM ET",
+      "available": true
+    }
+  ],
+  "emergencyNotice": {
+    "title": "Emergency?",
+    "message": "If you are experiencing a medical emergency, call 911 or go to the nearest emergency room immediately.",
+    "contact": "911",
+    "type": "phone"
+  },
+  "defaultSupportEmail": "support@horizonblue.com",
+  "defaultSupportPhone": "1-800-355-2583",
+  "defaultChatUrl": "https://www.horizonblue.com/chat",
+  "defaultHoursOfOperation": "Monday - Friday, 8:00 AM - 8:00 PM ET",
+  "websiteUrl": "https://www.horizonblue.com",
+  "mailingAddress": {
+    "name": "Horizon Blue Cross Blue Shield of New Jersey",
+    "street": "PO Box 820",
+    "city": "Newark",
+    "state": "NJ",
+    "zip": "07101-0820"
+  }
+}

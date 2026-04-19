@@ -1,0 +1,134 @@
+[
+  {
+    "id": "NOTIF-001",
+    "type": "action",
+    "title": "Claim Denied – Action Required",
+    "message": "Your claim HZN-2024-00012610 for Dr. James Wilson has been denied. Prior authorization was required but not obtained. You may appeal this decision within 180 days.",
+    "timestamp": "2024-10-20T14:30:00Z",
+    "isRead": false,
+    "memberId": "HBM-100234567",
+    "relatedId": "CLM-006",
+    "category": "claim_update"
+  },
+  {
+    "id": "NOTIF-002",
+    "type": "info",
+    "title": "Claim Processed Successfully",
+    "message": "Your claim HZN-2024-00012345 for Dr. Sarah Mitchell has been approved. Plan paid $304.00. Your responsibility is $76.00.",
+    "timestamp": "2024-09-28T10:15:00Z",
+    "isRead": true,
+    "memberId": "HBM-100234567",
+    "relatedId": "CLM-001",
+    "category": "claim_update"
+  },
+  {
+    "id": "NOTIF-003",
+    "type": "warning",
+    "title": "Claim Under Review",
+    "message": "Your claim HZN-2024-00012456 for Newark General Hospital is currently under review. Additional documentation may be requested. We will notify you when a decision is made.",
+    "timestamp": "2024-10-06T09:00:00Z",
+    "isRead": false,
+    "memberId": "HBM-100234567",
+    "relatedId": "CLM-003",
+    "category": "claim_update"
+  },
+  {
+    "id": "NOTIF-004",
+    "type": "info",
+    "title": "New Document Available",
+    "message": "Your Explanation of Benefits for Dr. Emily Rodriguez (10/08/2024) is now available in the Document Center.",
+    "timestamp": "2024-10-18T16:45:00Z",
+    "isRead": false,
+    "memberId": "HBM-100234567",
+    "relatedId": "DOC-EOB-015",
+    "category": "document_ready"
+  },
+  {
+    "id": "NOTIF-005",
+    "type": "system",
+    "title": "Scheduled Maintenance Notice",
+    "message": "The Horizon Member Portal will undergo scheduled maintenance on Saturday, November 2, 2024 from 2:00 AM to 6:00 AM ET. Some features may be temporarily unavailable during this time.",
+    "timestamp": "2024-10-22T08:00:00Z",
+    "isRead": false,
+    "memberId": null,
+    "relatedId": null,
+    "category": "system"
+  },
+  {
+    "id": "NOTIF-006",
+    "type": "action",
+    "title": "Deductible Milestone Reached",
+    "message": "You have met your individual deductible of $1,500.00 for the 2024 plan year. Your cost-sharing benefits will now apply at the coinsurance level for covered services.",
+    "timestamp": "2024-10-10T11:20:00Z",
+    "isRead": true,
+    "memberId": "HBM-100234567",
+    "relatedId": "PLAN-MED-001",
+    "category": "coverage_change"
+  },
+  {
+    "id": "NOTIF-007",
+    "type": "info",
+    "title": "Prescription Claim Approved",
+    "message": "Your pharmacy claim HZN-2024-00012501 at CVS Pharmacy has been processed. Plan paid $155.00. Your copay was $30.00.",
+    "timestamp": "2024-10-06T13:30:00Z",
+    "isRead": true,
+    "memberId": "HBM-100234567",
+    "relatedId": "CLM-004",
+    "category": "claim_update"
+  },
+  {
+    "id": "NOTIF-008",
+    "type": "warning",
+    "title": "Pending Claim – Cardiology Visit",
+    "message": "Your claim HZN-2024-00012720 for Dr. Angela Torres is pending processing. Estimated amounts are shown on your claims page. Final amounts may differ.",
+    "timestamp": "2024-10-13T15:00:00Z",
+    "isRead": false,
+    "memberId": "HBM-100234567",
+    "relatedId": "CLM-008",
+    "category": "claim_update"
+  },
+  {
+    "id": "NOTIF-009",
+    "type": "info",
+    "title": "Preventive Care Reminder",
+    "message": "It's time to schedule your annual wellness visit. Preventive care is covered at 100% with no member cost share under your PPO plan. Stay on top of your health!",
+    "timestamp": "2024-10-15T09:00:00Z",
+    "isRead": true,
+    "memberId": "HBM-100234567",
+    "relatedId": null,
+    "category": "system"
+  },
+  {
+    "id": "NOTIF-010",
+    "type": "action",
+    "title": "Appeal Submitted – Dental Crown",
+    "message": "Your appeal for claim HZN-2024-00013250 (dental crown with Dr. Robert Chen) has been received. The appeals department will review your case within 30 days.",
+    "timestamp": "2024-09-27T10:00:00Z",
+    "isRead": false,
+    "memberId": "HBM-100987654",
+    "relatedId": "CLM-018",
+    "category": "claim_update"
+  },
+  {
+    "id": "NOTIF-011",
+    "type": "info",
+    "title": "Immunizations Covered at 100%",
+    "message": "Your claim HZN-2024-00013375 for immunizations with Dr. David Kim has been approved. Preventive immunizations are covered at 100% with no member cost share.",
+    "timestamp": "2024-10-22T12:00:00Z",
+    "isRead": true,
+    "memberId": "HBM-100987654",
+    "relatedId": "CLM-020",
+    "category": "claim_update"
+  },
+  {
+    "id": "NOTIF-012",
+    "type": "system",
+    "title": "2024 Open Enrollment Reminder",
+    "message": "Open enrollment for the 2025 plan year begins November 1, 2024. Review your current benefits and explore plan options to ensure you have the coverage that best fits your needs.",
+    "timestamp": "2024-10-21T08:00:00Z",
+    "isRead": false,
+    "memberId": null,
+    "relatedId": null,
+    "category": "system"
+  }
+]

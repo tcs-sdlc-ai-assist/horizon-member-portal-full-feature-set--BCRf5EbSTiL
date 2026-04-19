@@ -1,0 +1,530 @@
+[
+  {
+    "id": "coverage_overview",
+    "type": "coverage_overview",
+    "title": "Coverage Overview",
+    "defaultVisible": true,
+    "defaultOrder": 1,
+    "description": "View a summary of your active coverage plans and key details.",
+    "data": {
+      "plans": [
+        {
+          "planId": "PLAN-MED-001",
+          "planName": "Horizon Blue Cross Blue Shield - PPO",
+          "planType": "medical",
+          "status": "active",
+          "effectiveDate": "2024-01-01",
+          "copayPrimaryCare": "$20",
+          "copaySpecialist": "$40"
+        },
+        {
+          "planId": "PLAN-DEN-001",
+          "planName": "Horizon Dental PPO",
+          "planType": "dental",
+          "status": "active",
+          "effectiveDate": "2024-01-01"
+        },
+        {
+          "planId": "PLAN-VIS-001",
+          "planName": "Horizon Vision Plan",
+          "planType": "vision",
+          "status": "active",
+          "effectiveDate": "2024-01-01"
+        }
+      ]
+    }
+  },
+  {
+    "id": "recent_claims",
+    "type": "recent-claims",
+    "title": "Recent Claims",
+    "defaultVisible": true,
+    "defaultOrder": 2,
+    "description": "View your most recent claims and their current status.",
+    "data": {
+      "claims": [
+        {
+          "claimNumber": "HZN-2024-00012345",
+          "provider": "Dr. Sarah Mitchell",
+          "serviceDate": "2024-09-15",
+          "billedAmount": 450.00,
+          "planPaid": 304.00,
+          "whatYouOwe": 76.00,
+          "status": "approved",
+          "type": "medical"
+        },
+        {
+          "claimNumber": "HZN-2024-00012390",
+          "provider": "Dr. Robert Chen",
+          "serviceDate": "2024-09-10",
+          "billedAmount": 320.00,
+          "planPaid": 224.00,
+          "whatYouOwe": 56.00,
+          "status": "approved",
+          "type": "dental"
+        },
+        {
+          "claimNumber": "HZN-2024-00012456",
+          "provider": "Newark General Hospital",
+          "serviceDate": "2024-10-02",
+          "billedAmount": 3250.00,
+          "planPaid": 2240.00,
+          "whatYouOwe": 560.00,
+          "status": "in_review",
+          "type": "medical"
+        },
+        {
+          "claimNumber": "HZN-2024-00012501",
+          "provider": "CVS Pharmacy #4521",
+          "serviceDate": "2024-10-05",
+          "billedAmount": 185.00,
+          "planPaid": 155.00,
+          "whatYouOwe": 30.00,
+          "status": "approved",
+          "type": "pharmacy"
+        },
+        {
+          "claimNumber": "HZN-2024-00012720",
+          "provider": "Dr. Angela Torres",
+          "serviceDate": "2024-10-10",
+          "billedAmount": 1200.00,
+          "planPaid": 784.00,
+          "whatYouOwe": 196.00,
+          "status": "pending",
+          "type": "medical"
+        }
+      ],
+      "maxDisplay": 5
+    }
+  },
+  {
+    "id": "spending_tracker",
+    "type": "spending_tracker",
+    "title": "Spending Tracker",
+    "defaultVisible": true,
+    "defaultOrder": 3,
+    "description": "Track your healthcare spending for the current plan year.",
+    "data": {
+      "planYear": "2024",
+      "totalBilled": 8875.00,
+      "totalPlanPaid": 6494.00,
+      "totalMemberCost": 2141.00,
+      "byCategory": [
+        {
+          "category": "Medical",
+          "billed": 6525.00,
+          "planPaid": 4891.00,
+          "memberCost": 1394.00
+        },
+        {
+          "category": "Dental",
+          "billed": 2170.00,
+          "planPaid": 1024.00,
+          "memberCost": 856.00
+        },
+        {
+          "category": "Vision",
+          "billed": 475.00,
+          "planPaid": 280.00,
+          "memberCost": 120.00
+        },
+        {
+          "category": "Pharmacy",
+          "billed": 230.00,
+          "planPaid": 190.00,
+          "memberCost": 40.00
+        }
+      ]
+    }
+  },
+  {
+    "id": "id_card",
+    "type": "id-cards",
+    "title": "ID Cards",
+    "defaultVisible": true,
+    "defaultOrder": 4,
+    "description": "Quick access to your digital insurance ID cards.",
+    "data": {
+      "cards": [
+        {
+          "coverageId": "COV-MED-001",
+          "coverageType": "Medical",
+          "planName": "Horizon Blue Cross Blue Shield - PPO",
+          "memberId": "HBM-100234567",
+          "groupNumber": "GRP-50012"
+        },
+        {
+          "coverageId": "COV-DEN-001",
+          "coverageType": "Dental",
+          "planName": "Horizon Dental PPO",
+          "memberId": "HBM-100234567",
+          "groupNumber": "GRP-50012"
+        },
+        {
+          "coverageId": "COV-VIS-001",
+          "coverageType": "Vision",
+          "planName": "Horizon Vision Plan",
+          "memberId": "HBM-100234567",
+          "groupNumber": "GRP-50012"
+        }
+      ]
+    }
+  },
+  {
+    "id": "deductible_progress",
+    "type": "deductible-oop",
+    "title": "Deductible & Out-of-Pocket",
+    "defaultVisible": true,
+    "defaultOrder": 5,
+    "description": "Track your progress toward your annual deductible and out-of-pocket maximum.",
+    "data": {
+      "medical": {
+        "planName": "Horizon Blue Cross Blue Shield - PPO",
+        "deductible": {
+          "individual": {
+            "used": 850.00,
+            "total": 1500.00
+          },
+          "family": {
+            "used": 1200.00,
+            "total": 3000.00
+          }
+        },
+        "outOfPocketMax": {
+          "individual": {
+            "used": 2340.00,
+            "total": 6000.00
+          },
+          "family": {
+            "used": 3100.00,
+            "total": 12000.00
+          }
+        }
+      },
+      "dental": {
+        "planName": "Horizon Dental PPO",
+        "deductible": {
+          "individual": {
+            "used": 50.00,
+            "total": 50.00
+          },
+          "family": {
+            "used": 75.00,
+            "total": 150.00
+          }
+        },
+        "outOfPocketMax": {
+          "individual": {
+            "used": 680.00,
+            "total": 2000.00
+          },
+          "family": {
+            "used": 680.00,
+            "total": 6000.00
+          }
+        }
+      },
+      "vision": {
+        "planName": "Horizon Vision Plan",
+        "deductible": {
+          "individual": {
+            "used": 0.00,
+            "total": 0.00
+          },
+          "family": {
+            "used": 0.00,
+            "total": 0.00
+          }
+        },
+        "outOfPocketMax": {
+          "individual": {
+            "used": 120.00,
+            "total": 500.00
+          },
+          "family": {
+            "used": 120.00,
+            "total": 1500.00
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "quick_links",
+    "type": "quick_links",
+    "title": "Quick Links",
+    "defaultVisible": true,
+    "defaultOrder": 6,
+    "description": "Shortcuts to frequently used features and resources.",
+    "data": {
+      "links": [
+        {
+          "id": "ql-find-provider",
+          "label": "Find a Provider",
+          "path": "/find-care/provider",
+          "icon": "search",
+          "description": "Search for in-network doctors and specialists."
+        },
+        {
+          "id": "ql-view-claims",
+          "label": "View Claims",
+          "path": "/claims",
+          "icon": "claims",
+          "description": "Check the status of your recent claims."
+        },
+        {
+          "id": "ql-id-cards",
+          "label": "ID Cards",
+          "path": "/id-cards",
+          "icon": "id_card",
+          "description": "View, print, or download your insurance ID cards."
+        },
+        {
+          "id": "ql-documents",
+          "label": "Document Center",
+          "path": "/documents",
+          "icon": "documents",
+          "description": "Access your EOBs, plan documents, and correspondence."
+        },
+        {
+          "id": "ql-benefits",
+          "label": "Benefits Details",
+          "path": "/benefits",
+          "icon": "benefits",
+          "description": "Review your plan benefits and coverage details."
+        },
+        {
+          "id": "ql-prescriptions",
+          "label": "Prescriptions",
+          "path": "/prescriptions",
+          "icon": "prescriptions",
+          "description": "View prescription history and find a pharmacy."
+        },
+        {
+          "id": "ql-support",
+          "label": "Contact Support",
+          "path": "/support",
+          "icon": "support",
+          "description": "Get help from our member services team."
+        },
+        {
+          "id": "ql-telehealth",
+          "label": "Telehealth",
+          "path": "/find-care/telehealth",
+          "icon": "telehealth",
+          "description": "Connect with a doctor online from home."
+        }
+      ]
+    }
+  },
+  {
+    "id": "notifications",
+    "type": "notifications",
+    "title": "Notifications",
+    "defaultVisible": true,
+    "defaultOrder": 7,
+    "description": "Stay up to date with important alerts and updates about your plan.",
+    "data": {
+      "maxDisplay": 5,
+      "unreadCount": 5,
+      "recentNotifications": [
+        {
+          "id": "NOTIF-001",
+          "type": "action",
+          "title": "Claim Denied – Action Required",
+          "message": "Your claim HZN-2024-00012610 for Dr. James Wilson has been denied.",
+          "timestamp": "2024-10-20T14:30:00Z",
+          "isRead": false,
+          "category": "claim_update"
+        },
+        {
+          "id": "NOTIF-003",
+          "type": "warning",
+          "title": "Claim Under Review",
+          "message": "Your claim HZN-2024-00012456 for Newark General Hospital is currently under review.",
+          "timestamp": "2024-10-06T09:00:00Z",
+          "isRead": false,
+          "category": "claim_update"
+        },
+        {
+          "id": "NOTIF-004",
+          "type": "info",
+          "title": "New Document Available",
+          "message": "Your Explanation of Benefits for Dr. Emily Rodriguez is now available.",
+          "timestamp": "2024-10-18T16:45:00Z",
+          "isRead": false,
+          "category": "document_ready"
+        },
+        {
+          "id": "NOTIF-008",
+          "type": "warning",
+          "title": "Pending Claim – Cardiology Visit",
+          "message": "Your claim HZN-2024-00012720 for Dr. Angela Torres is pending processing.",
+          "timestamp": "2024-10-13T15:00:00Z",
+          "isRead": false,
+          "category": "claim_update"
+        },
+        {
+          "id": "NOTIF-012",
+          "type": "system",
+          "title": "2024 Open Enrollment Reminder",
+          "message": "Open enrollment for the 2025 plan year begins November 1, 2024.",
+          "timestamp": "2024-10-21T08:00:00Z",
+          "isRead": false,
+          "category": "system"
+        }
+      ]
+    }
+  },
+  {
+    "id": "documents",
+    "type": "documents",
+    "title": "Recent Documents",
+    "defaultVisible": true,
+    "defaultOrder": 8,
+    "description": "Quick access to your most recently added documents.",
+    "data": {
+      "maxDisplay": 5,
+      "recentDocuments": [
+        {
+          "id": "DOC-EOB-015",
+          "name": "Explanation of Benefits - Dr. Emily Rodriguez - Oct 2024",
+          "category": "eob",
+          "dateAdded": "2024-10-18",
+          "fileSize": "163 KB"
+        },
+        {
+          "id": "DOC-EOB-007",
+          "name": "Explanation of Benefits - Hudson Physical Therapy - Oct 2024",
+          "category": "eob",
+          "dateAdded": "2024-10-08",
+          "fileSize": "156 KB"
+        },
+        {
+          "id": "DOC-EOB-004",
+          "name": "Explanation of Benefits - CVS Pharmacy - Oct 2024",
+          "category": "eob",
+          "dateAdded": "2024-10-06",
+          "fileSize": "132 KB"
+        },
+        {
+          "id": "DOC-EOB-009",
+          "name": "Explanation of Benefits - Walgreens Pharmacy - Oct 2024",
+          "category": "eob",
+          "dateAdded": "2024-10-02",
+          "fileSize": "118 KB"
+        },
+        {
+          "id": "DOC-EOB-013",
+          "name": "Explanation of Benefits - BioReference Labs - Oct 2024",
+          "category": "eob",
+          "dateAdded": "2024-10-01",
+          "fileSize": "224 KB"
+        }
+      ]
+    }
+  },
+  {
+    "id": "find_care",
+    "type": "find-care",
+    "title": "Find Care",
+    "defaultVisible": false,
+    "defaultOrder": 9,
+    "description": "Search for in-network providers, facilities, and telehealth options.",
+    "data": {
+      "searchCategories": [
+        {
+          "id": "fc-provider",
+          "label": "Find a Provider",
+          "path": "/find-care/provider",
+          "icon": "search",
+          "description": "Search for doctors, specialists, and other healthcare providers in your network."
+        },
+        {
+          "id": "fc-facility",
+          "label": "Find a Facility",
+          "path": "/find-care/facility",
+          "icon": "facility",
+          "description": "Locate hospitals, urgent care centers, labs, and imaging centers near you."
+        },
+        {
+          "id": "fc-telehealth",
+          "label": "Telehealth",
+          "path": "/find-care/telehealth",
+          "icon": "telehealth",
+          "description": "Connect with a healthcare provider online from the comfort of your home."
+        },
+        {
+          "id": "fc-urgent-care",
+          "label": "Urgent Care",
+          "path": "/find-care/urgent-care",
+          "icon": "urgent_care",
+          "description": "Find urgent care centers near you for non-emergency medical needs."
+        }
+      ],
+      "recentSearches": []
+    }
+  },
+  {
+    "id": "prior_auth_status",
+    "type": "prior_auth_status",
+    "title": "Prior Authorization Status",
+    "defaultVisible": false,
+    "defaultOrder": 10,
+    "description": "Check the status of your prior authorization requests.",
+    "data": {
+      "authorizations": [],
+      "emptyMessage": "You have no prior authorization requests at this time."
+    }
+  },
+  {
+    "id": "benefits_snapshot",
+    "type": "benefits_snapshot",
+    "title": "Benefits Snapshot",
+    "defaultVisible": false,
+    "defaultOrder": 11,
+    "description": "A quick overview of your key plan benefits and copays.",
+    "data": {
+      "medical": {
+        "planName": "Horizon Blue Cross Blue Shield - PPO",
+        "highlights": [
+          { "name": "Primary Care Visit", "value": "$20 copay" },
+          { "name": "Specialist Visit", "value": "$40 copay" },
+          { "name": "Urgent Care", "value": "$50 copay" },
+          { "name": "Emergency Room", "value": "$150 copay" },
+          { "name": "Preventive Care", "value": "$0 (covered at 100%)" },
+          { "name": "Generic Drugs", "value": "$10 copay" }
+        ]
+      },
+      "dental": {
+        "planName": "Horizon Dental PPO",
+        "highlights": [
+          { "name": "Preventive Care", "value": "$0 (covered at 100%)" },
+          { "name": "Basic Services", "value": "20% coinsurance" },
+          { "name": "Major Services", "value": "50% coinsurance" }
+        ]
+      },
+      "vision": {
+        "planName": "Horizon Vision Plan",
+        "highlights": [
+          { "name": "Eye Exam", "value": "$10 copay" },
+          { "name": "Lenses", "value": "$25 copay" },
+          { "name": "Frames", "value": "$25 copay (up to $200 allowance)" }
+        ]
+      }
+    }
+  },
+  {
+    "id": "message_center",
+    "type": "message_center",
+    "title": "Message Center",
+    "defaultVisible": false,
+    "defaultOrder": 12,
+    "description": "View and manage secure messages from Horizon.",
+    "data": {
+      "unreadCount": 0,
+      "recentMessages": [],
+      "emptyMessage": "You have no new messages at this time."
+    }
+  }
+]

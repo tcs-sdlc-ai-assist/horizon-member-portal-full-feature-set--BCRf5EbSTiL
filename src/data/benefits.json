@@ -1,0 +1,838 @@
+[
+  {
+    "planId": "PLAN-MED-001",
+    "memberId": "HBM-100234567",
+    "planName": "Horizon Blue Cross Blue Shield - PPO",
+    "planType": "medical",
+    "status": "active",
+    "effectiveDate": "2024-01-01",
+    "terminationDate": null,
+    "groupNumber": "GRP-50012",
+    "subscriberName": "John Doe",
+    "deductible": {
+      "individual": {
+        "used": 850.00,
+        "total": 1500.00
+      },
+      "family": {
+        "used": 1200.00,
+        "total": 3000.00
+      }
+    },
+    "outOfPocketMax": {
+      "individual": {
+        "used": 2340.00,
+        "total": 6000.00
+      },
+      "family": {
+        "used": 3100.00,
+        "total": 12000.00
+      }
+    },
+    "coverageCategories": [
+      {
+        "name": "Primary Care Visit",
+        "inNetwork": {
+          "copay": 20,
+          "coinsurance": null
+        },
+        "outOfNetwork": {
+          "copay": null,
+          "coinsurance": 40
+        }
+      },
+      {
+        "name": "Specialist Visit",
+        "inNetwork": {
+          "copay": 40,
+          "coinsurance": null
+        },
+        "outOfNetwork": {
+          "copay": null,
+          "coinsurance": 50
+        }
+      },
+      {
+        "name": "Urgent Care",
+        "inNetwork": {
+          "copay": 50,
+          "coinsurance": null
+        },
+        "outOfNetwork": {
+          "copay": 50,
+          "coinsurance": null
+        }
+      },
+      {
+        "name": "Emergency Room",
+        "inNetwork": {
+          "copay": 150,
+          "coinsurance": null
+        },
+        "outOfNetwork": {
+          "copay": 150,
+          "coinsurance": null
+        }
+      },
+      {
+        "name": "Preventive Care",
+        "inNetwork": {
+          "copay": 0,
+          "coinsurance": 0
+        },
+        "outOfNetwork": {
+          "copay": null,
+          "coinsurance": 40
+        }
+      },
+      {
+        "name": "Diagnostic Lab Work",
+        "inNetwork": {
+          "copay": null,
+          "coinsurance": 20
+        },
+        "outOfNetwork": {
+          "copay": null,
+          "coinsurance": 50
+        }
+      },
+      {
+        "name": "X-Ray & Imaging",
+        "inNetwork": {
+          "copay": null,
+          "coinsurance": 20
+        },
+        "outOfNetwork": {
+          "copay": null,
+          "coinsurance": 50
+        }
+      },
+      {
+        "name": "Inpatient Hospital",
+        "inNetwork": {
+          "copay": null,
+          "coinsurance": 20
+        },
+        "outOfNetwork": {
+          "copay": null,
+          "coinsurance": 50
+        }
+      },
+      {
+        "name": "Outpatient Surgery",
+        "inNetwork": {
+          "copay": null,
+          "coinsurance": 20
+        },
+        "outOfNetwork": {
+          "copay": null,
+          "coinsurance": 50
+        }
+      },
+      {
+        "name": "Mental Health (Outpatient)",
+        "inNetwork": {
+          "copay": 40,
+          "coinsurance": null
+        },
+        "outOfNetwork": {
+          "copay": null,
+          "coinsurance": 50
+        }
+      },
+      {
+        "name": "Physical Therapy",
+        "inNetwork": {
+          "copay": 40,
+          "coinsurance": null
+        },
+        "outOfNetwork": {
+          "copay": null,
+          "coinsurance": 50
+        }
+      },
+      {
+        "name": "Generic Drugs (Retail)",
+        "inNetwork": {
+          "copay": 10,
+          "coinsurance": null
+        },
+        "outOfNetwork": {
+          "copay": null,
+          "coinsurance": 50
+        }
+      },
+      {
+        "name": "Preferred Brand Drugs (Retail)",
+        "inNetwork": {
+          "copay": 30,
+          "coinsurance": null
+        },
+        "outOfNetwork": {
+          "copay": null,
+          "coinsurance": 50
+        }
+      },
+      {
+        "name": "Non-Preferred Brand Drugs (Retail)",
+        "inNetwork": {
+          "copay": 50,
+          "coinsurance": null
+        },
+        "outOfNetwork": {
+          "copay": null,
+          "coinsurance": 50
+        }
+      },
+      {
+        "name": "Specialty Drugs",
+        "inNetwork": {
+          "copay": null,
+          "coinsurance": 30
+        },
+        "outOfNetwork": {
+          "copay": null,
+          "coinsurance": 50
+        }
+      }
+    ]
+  },
+  {
+    "planId": "PLAN-DEN-001",
+    "memberId": "HBM-100234567",
+    "planName": "Horizon Dental PPO",
+    "planType": "dental",
+    "status": "active",
+    "effectiveDate": "2024-01-01",
+    "terminationDate": null,
+    "groupNumber": "GRP-50012",
+    "subscriberName": "John Doe",
+    "deductible": {
+      "individual": {
+        "used": 50.00,
+        "total": 50.00
+      },
+      "family": {
+        "used": 75.00,
+        "total": 150.00
+      }
+    },
+    "outOfPocketMax": {
+      "individual": {
+        "used": 680.00,
+        "total": 2000.00
+      },
+      "family": {
+        "used": 680.00,
+        "total": 6000.00
+      }
+    },
+    "coverageCategories": [
+      {
+        "name": "Preventive (Cleanings, Exams, X-Rays)",
+        "inNetwork": {
+          "copay": 0,
+          "coinsurance": 0
+        },
+        "outOfNetwork": {
+          "copay": null,
+          "coinsurance": 20
+        }
+      },
+      {
+        "name": "Basic (Fillings, Extractions)",
+        "inNetwork": {
+          "copay": null,
+          "coinsurance": 20
+        },
+        "outOfNetwork": {
+          "copay": null,
+          "coinsurance": 40
+        }
+      },
+      {
+        "name": "Major (Crowns, Bridges, Dentures)",
+        "inNetwork": {
+          "copay": null,
+          "coinsurance": 50
+        },
+        "outOfNetwork": {
+          "copay": null,
+          "coinsurance": 60
+        }
+      },
+      {
+        "name": "Orthodontia (Adults & Children)",
+        "inNetwork": {
+          "copay": null,
+          "coinsurance": 50
+        },
+        "outOfNetwork": {
+          "copay": null,
+          "coinsurance": 60
+        }
+      },
+      {
+        "name": "Oral Surgery",
+        "inNetwork": {
+          "copay": null,
+          "coinsurance": 50
+        },
+        "outOfNetwork": {
+          "copay": null,
+          "coinsurance": 60
+        }
+      },
+      {
+        "name": "Periodontics (Gum Treatment)",
+        "inNetwork": {
+          "copay": null,
+          "coinsurance": 20
+        },
+        "outOfNetwork": {
+          "copay": null,
+          "coinsurance": 40
+        }
+      },
+      {
+        "name": "Endodontics (Root Canals)",
+        "inNetwork": {
+          "copay": null,
+          "coinsurance": 20
+        },
+        "outOfNetwork": {
+          "copay": null,
+          "coinsurance": 40
+        }
+      }
+    ]
+  },
+  {
+    "planId": "PLAN-VIS-001",
+    "memberId": "HBM-100234567",
+    "planName": "Horizon Vision Plan",
+    "planType": "vision",
+    "status": "active",
+    "effectiveDate": "2024-01-01",
+    "terminationDate": null,
+    "groupNumber": "GRP-50012",
+    "subscriberName": "John Doe",
+    "deductible": {
+      "individual": {
+        "used": 0.00,
+        "total": 0.00
+      },
+      "family": {
+        "used": 0.00,
+        "total": 0.00
+      }
+    },
+    "outOfPocketMax": {
+      "individual": {
+        "used": 120.00,
+        "total": 500.00
+      },
+      "family": {
+        "used": 120.00,
+        "total": 1500.00
+      }
+    },
+    "coverageCategories": [
+      {
+        "name": "Comprehensive Eye Exam",
+        "inNetwork": {
+          "copay": 10,
+          "coinsurance": null
+        },
+        "outOfNetwork": {
+          "copay": null,
+          "coinsurance": 50
+        }
+      },
+      {
+        "name": "Single Vision Lenses",
+        "inNetwork": {
+          "copay": 25,
+          "coinsurance": null
+        },
+        "outOfNetwork": {
+          "copay": null,
+          "coinsurance": 50
+        }
+      },
+      {
+        "name": "Bifocal Lenses",
+        "inNetwork": {
+          "copay": 25,
+          "coinsurance": null
+        },
+        "outOfNetwork": {
+          "copay": null,
+          "coinsurance": 50
+        }
+      },
+      {
+        "name": "Progressive Lenses",
+        "inNetwork": {
+          "copay": 25,
+          "coinsurance": null
+        },
+        "outOfNetwork": {
+          "copay": null,
+          "coinsurance": 50
+        }
+      },
+      {
+        "name": "Frames (up to $200 allowance)",
+        "inNetwork": {
+          "copay": 25,
+          "coinsurance": null
+        },
+        "outOfNetwork": {
+          "copay": null,
+          "coinsurance": 70
+        }
+      },
+      {
+        "name": "Contact Lenses (up to $150 allowance)",
+        "inNetwork": {
+          "copay": 25,
+          "coinsurance": null
+        },
+        "outOfNetwork": {
+          "copay": null,
+          "coinsurance": 70
+        }
+      },
+      {
+        "name": "Lens Enhancements (Anti-Reflective, etc.)",
+        "inNetwork": {
+          "copay": null,
+          "coinsurance": 20
+        },
+        "outOfNetwork": {
+          "copay": null,
+          "coinsurance": 100
+        }
+      }
+    ]
+  },
+  {
+    "planId": "PLAN-MED-002",
+    "memberId": "HBM-100987654",
+    "planName": "Horizon Blue Cross Blue Shield - HMO",
+    "planType": "medical",
+    "status": "active",
+    "effectiveDate": "2024-01-01",
+    "terminationDate": null,
+    "groupNumber": "GRP-50034",
+    "subscriberName": "Maria Smith",
+    "deductible": {
+      "individual": {
+        "used": 400.00,
+        "total": 1000.00
+      },
+      "family": {
+        "used": 400.00,
+        "total": 2000.00
+      }
+    },
+    "outOfPocketMax": {
+      "individual": {
+        "used": 1560.00,
+        "total": 5000.00
+      },
+      "family": {
+        "used": 1560.00,
+        "total": 10000.00
+      }
+    },
+    "coverageCategories": [
+      {
+        "name": "Primary Care Visit",
+        "inNetwork": {
+          "copay": 15,
+          "coinsurance": null
+        },
+        "outOfNetwork": {
+          "copay": null,
+          "coinsurance": null
+        }
+      },
+      {
+        "name": "Specialist Visit",
+        "inNetwork": {
+          "copay": 30,
+          "coinsurance": null
+        },
+        "outOfNetwork": {
+          "copay": null,
+          "coinsurance": null
+        }
+      },
+      {
+        "name": "Urgent Care",
+        "inNetwork": {
+          "copay": 40,
+          "coinsurance": null
+        },
+        "outOfNetwork": {
+          "copay": 40,
+          "coinsurance": null
+        }
+      },
+      {
+        "name": "Emergency Room",
+        "inNetwork": {
+          "copay": 100,
+          "coinsurance": null
+        },
+        "outOfNetwork": {
+          "copay": 100,
+          "coinsurance": null
+        }
+      },
+      {
+        "name": "Preventive Care",
+        "inNetwork": {
+          "copay": 0,
+          "coinsurance": 0
+        },
+        "outOfNetwork": {
+          "copay": null,
+          "coinsurance": null
+        }
+      },
+      {
+        "name": "Diagnostic Lab Work",
+        "inNetwork": {
+          "copay": null,
+          "coinsurance": 10
+        },
+        "outOfNetwork": {
+          "copay": null,
+          "coinsurance": null
+        }
+      },
+      {
+        "name": "X-Ray & Imaging",
+        "inNetwork": {
+          "copay": null,
+          "coinsurance": 15
+        },
+        "outOfNetwork": {
+          "copay": null,
+          "coinsurance": null
+        }
+      },
+      {
+        "name": "Inpatient Hospital",
+        "inNetwork": {
+          "copay": null,
+          "coinsurance": 15
+        },
+        "outOfNetwork": {
+          "copay": null,
+          "coinsurance": null
+        }
+      },
+      {
+        "name": "Outpatient Surgery",
+        "inNetwork": {
+          "copay": null,
+          "coinsurance": 15
+        },
+        "outOfNetwork": {
+          "copay": null,
+          "coinsurance": null
+        }
+      },
+      {
+        "name": "Mental Health (Outpatient)",
+        "inNetwork": {
+          "copay": 30,
+          "coinsurance": null
+        },
+        "outOfNetwork": {
+          "copay": null,
+          "coinsurance": null
+        }
+      },
+      {
+        "name": "Physical Therapy",
+        "inNetwork": {
+          "copay": 30,
+          "coinsurance": null
+        },
+        "outOfNetwork": {
+          "copay": null,
+          "coinsurance": null
+        }
+      },
+      {
+        "name": "Generic Drugs (Retail)",
+        "inNetwork": {
+          "copay": 5,
+          "coinsurance": null
+        },
+        "outOfNetwork": {
+          "copay": null,
+          "coinsurance": null
+        }
+      },
+      {
+        "name": "Preferred Brand Drugs (Retail)",
+        "inNetwork": {
+          "copay": 25,
+          "coinsurance": null
+        },
+        "outOfNetwork": {
+          "copay": null,
+          "coinsurance": null
+        }
+      },
+      {
+        "name": "Non-Preferred Brand Drugs (Retail)",
+        "inNetwork": {
+          "copay": 45,
+          "coinsurance": null
+        },
+        "outOfNetwork": {
+          "copay": null,
+          "coinsurance": null
+        }
+      },
+      {
+        "name": "Specialty Drugs",
+        "inNetwork": {
+          "copay": null,
+          "coinsurance": 25
+        },
+        "outOfNetwork": {
+          "copay": null,
+          "coinsurance": null
+        }
+      }
+    ]
+  },
+  {
+    "planId": "PLAN-DEN-002",
+    "memberId": "HBM-100987654",
+    "planName": "Horizon Dental EPO",
+    "planType": "dental",
+    "status": "active",
+    "effectiveDate": "2024-01-01",
+    "terminationDate": null,
+    "groupNumber": "GRP-50034",
+    "subscriberName": "Maria Smith",
+    "deductible": {
+      "individual": {
+        "used": 25.00,
+        "total": 25.00
+      },
+      "family": {
+        "used": 25.00,
+        "total": 75.00
+      }
+    },
+    "outOfPocketMax": {
+      "individual": {
+        "used": 525.00,
+        "total": 2500.00
+      },
+      "family": {
+        "used": 525.00,
+        "total": 7500.00
+      }
+    },
+    "coverageCategories": [
+      {
+        "name": "Preventive (Cleanings, Exams, X-Rays)",
+        "inNetwork": {
+          "copay": 0,
+          "coinsurance": 0
+        },
+        "outOfNetwork": {
+          "copay": null,
+          "coinsurance": null
+        }
+      },
+      {
+        "name": "Basic (Fillings, Extractions)",
+        "inNetwork": {
+          "copay": null,
+          "coinsurance": 15
+        },
+        "outOfNetwork": {
+          "copay": null,
+          "coinsurance": null
+        }
+      },
+      {
+        "name": "Major (Crowns, Bridges, Dentures)",
+        "inNetwork": {
+          "copay": null,
+          "coinsurance": 40
+        },
+        "outOfNetwork": {
+          "copay": null,
+          "coinsurance": null
+        }
+      },
+      {
+        "name": "Orthodontia (Adults & Children)",
+        "inNetwork": {
+          "copay": null,
+          "coinsurance": 50
+        },
+        "outOfNetwork": {
+          "copay": null,
+          "coinsurance": null
+        }
+      },
+      {
+        "name": "Oral Surgery",
+        "inNetwork": {
+          "copay": null,
+          "coinsurance": 40
+        },
+        "outOfNetwork": {
+          "copay": null,
+          "coinsurance": null
+        }
+      },
+      {
+        "name": "Periodontics (Gum Treatment)",
+        "inNetwork": {
+          "copay": null,
+          "coinsurance": 15
+        },
+        "outOfNetwork": {
+          "copay": null,
+          "coinsurance": null
+        }
+      },
+      {
+        "name": "Endodontics (Root Canals)",
+        "inNetwork": {
+          "copay": null,
+          "coinsurance": 15
+        },
+        "outOfNetwork": {
+          "copay": null,
+          "coinsurance": null
+        }
+      }
+    ]
+  },
+  {
+    "planId": "PLAN-VIS-002",
+    "memberId": "HBM-100987654",
+    "planName": "Horizon Vision Plus",
+    "planType": "vision",
+    "status": "active",
+    "effectiveDate": "2024-01-01",
+    "terminationDate": null,
+    "groupNumber": "GRP-50034",
+    "subscriberName": "Maria Smith",
+    "deductible": {
+      "individual": {
+        "used": 0.00,
+        "total": 0.00
+      },
+      "family": {
+        "used": 0.00,
+        "total": 0.00
+      }
+    },
+    "outOfPocketMax": {
+      "individual": {
+        "used": 150.00,
+        "total": 600.00
+      },
+      "family": {
+        "used": 150.00,
+        "total": 1800.00
+      }
+    },
+    "coverageCategories": [
+      {
+        "name": "Comprehensive Eye Exam",
+        "inNetwork": {
+          "copay": 10,
+          "coinsurance": null
+        },
+        "outOfNetwork": {
+          "copay": null,
+          "coinsurance": 50
+        }
+      },
+      {
+        "name": "Single Vision Lenses",
+        "inNetwork": {
+          "copay": 20,
+          "coinsurance": null
+        },
+        "outOfNetwork": {
+          "copay": null,
+          "coinsurance": 50
+        }
+      },
+      {
+        "name": "Bifocal Lenses",
+        "inNetwork": {
+          "copay": 20,
+          "coinsurance": null
+        },
+        "outOfNetwork": {
+          "copay": null,
+          "coinsurance": 50
+        }
+      },
+      {
+        "name": "Progressive Lenses",
+        "inNetwork": {
+          "copay": 20,
+          "coinsurance": null
+        },
+        "outOfNetwork": {
+          "copay": null,
+          "coinsurance": 50
+        }
+      },
+      {
+        "name": "Frames (up to $250 allowance)",
+        "inNetwork": {
+          "copay": 20,
+          "coinsurance": null
+        },
+        "outOfNetwork": {
+          "copay": null,
+          "coinsurance": 70
+        }
+      },
+      {
+        "name": "Contact Lenses (up to $200 allowance)",
+        "inNetwork": {
+          "copay": 20,
+          "coinsurance": null
+        },
+        "outOfNetwork": {
+          "copay": null,
+          "coinsurance": 70
+        }
+      },
+      {
+        "name": "Lens Enhancements (Anti-Reflective, etc.)",
+        "inNetwork": {
+          "copay": null,
+          "coinsurance": 15
+        },
+        "outOfNetwork": {
+          "copay": null,
+          "coinsurance": 100
+        }
+      }
+    ]
+  }
+]

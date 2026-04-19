@@ -1,0 +1,161 @@
+[
+  {
+    "id": 1,
+    "username": "jdoe",
+    "password": "Password1!",
+    "displayName": "John Doe",
+    "role": "member",
+    "email": "john.doe@example.com",
+    "memberId": "HBM-100234567",
+    "groupNumber": "GRP-50012",
+    "planType": "medical",
+    "phone": "555-123-4567",
+    "dateOfBirth": "1985-03-15",
+    "address": {
+      "street": "123 Main Street",
+      "city": "Newark",
+      "state": "NJ",
+      "zip": "07101"
+    },
+    "preferences": {
+      "widgetOrder": [
+        "coverage_overview",
+        "recent_claims",
+        "spending_tracker",
+        "id_card",
+        "deductible_progress",
+        "quick_links",
+        "notifications",
+        "documents"
+      ],
+      "widgetVisibility": {
+        "coverage_overview": true,
+        "recent_claims": true,
+        "spending_tracker": true,
+        "id_card": true,
+        "deductible_progress": true,
+        "quick_links": true,
+        "notifications": true,
+        "documents": true,
+        "find_care": false,
+        "prior_auth_status": false,
+        "benefits_snapshot": false,
+        "message_center": false
+      },
+      "notificationPreferences": {
+        "email": true,
+        "sms": false,
+        "claimUpdates": true,
+        "documentReady": true,
+        "coverageChanges": true,
+        "priorAuthUpdates": true
+      }
+    }
+  },
+  {
+    "id": 2,
+    "username": "msmith",
+    "password": "Password2!",
+    "displayName": "Maria Smith",
+    "role": "member",
+    "email": "maria.smith@example.com",
+    "memberId": "HBM-100987654",
+    "groupNumber": "GRP-50034",
+    "planType": "dental",
+    "phone": "555-987-6543",
+    "dateOfBirth": "1990-07-22",
+    "address": {
+      "street": "456 Oak Avenue",
+      "city": "Jersey City",
+      "state": "NJ",
+      "zip": "07302"
+    },
+    "preferences": {
+      "widgetOrder": [
+        "id_card",
+        "coverage_overview",
+        "notifications",
+        "recent_claims",
+        "quick_links",
+        "spending_tracker",
+        "deductible_progress",
+        "find_care"
+      ],
+      "widgetVisibility": {
+        "coverage_overview": true,
+        "recent_claims": true,
+        "spending_tracker": true,
+        "id_card": true,
+        "deductible_progress": true,
+        "quick_links": true,
+        "notifications": true,
+        "documents": false,
+        "find_care": true,
+        "prior_auth_status": false,
+        "benefits_snapshot": false,
+        "message_center": true
+      },
+      "notificationPreferences": {
+        "email": true,
+        "sms": true,
+        "claimUpdates": true,
+        "documentReady": false,
+        "coverageChanges": true,
+        "priorAuthUpdates": false
+      }
+    }
+  },
+  {
+    "id": 3,
+    "username": "admin",
+    "password": "Admin123!",
+    "displayName": "Sarah Johnson",
+    "role": "admin",
+    "email": "sarah.johnson@horizonblue.com",
+    "memberId": null,
+    "groupNumber": null,
+    "planType": null,
+    "phone": "555-555-0100",
+    "dateOfBirth": "1978-11-05",
+    "address": {
+      "street": "3 Penn Plaza East",
+      "city": "Newark",
+      "state": "NJ",
+      "zip": "07105"
+    },
+    "preferences": {
+      "widgetOrder": [
+        "notifications",
+        "quick_links",
+        "coverage_overview",
+        "recent_claims",
+        "spending_tracker",
+        "id_card",
+        "deductible_progress",
+        "documents"
+      ],
+      "widgetVisibility": {
+        "coverage_overview": true,
+        "recent_claims": true,
+        "spending_tracker": true,
+        "id_card": true,
+        "deductible_progress": true,
+        "quick_links": true,
+        "notifications": true,
+        "documents": true,
+        "find_care": true,
+        "prior_auth_status": true,
+        "benefits_snapshot": true,
+        "message_center": true
+      },
+      "notificationPreferences": {
+        "email": true,
+        "sms": false,
+        "claimUpdates": true,
+        "documentReady": true,
+        "coverageChanges": true,
+        "priorAuthUpdates": true
+      }
+    }
+  }
+]

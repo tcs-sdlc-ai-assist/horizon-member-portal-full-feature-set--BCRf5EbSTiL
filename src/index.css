@@ -1,0 +1,1698 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================
+   Horizon Member Portal - Global Styles
+   HB CSS Framework Implementation
+   ============================================ */
+
+/* ---- Base / Reset ---- */
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans text-horizon-dark bg-horizon-gray-50 m-0 p-0 leading-normal;
+    min-height: 100vh;
+  }
+
+  #root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-roboto font-bold text-horizon-primary leading-tight;
+    margin: 0;
+  }
+
+  h1 {
+    @apply text-3xl md:text-4xl;
+  }
+
+  h2 {
+    @apply text-2xl md:text-3xl;
+  }
+
+  h3 {
+    @apply text-xl md:text-2xl;
+  }
+
+  h4 {
+    @apply text-lg md:text-xl;
+  }
+
+  h5 {
+    @apply text-base md:text-lg;
+  }
+
+  h6 {
+    @apply text-sm md:text-base;
+  }
+
+  p {
+    @apply text-base text-horizon-gray-700 leading-relaxed;
+    margin: 0 0 1rem 0;
+  }
+
+  a {
+    @apply text-horizon-blue no-underline transition-colors duration-200;
+  }
+
+  a:hover {
+    @apply text-horizon-primary underline;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  ul, ol {
+    @apply pl-6;
+  }
+
+  table {
+    @apply w-full border-collapse;
+  }
+
+  /* Remove default focus outline, replaced with accessible version below */
+  :focus {
+    outline: none;
+  }
+}
+
+/* ============================================
+   Typography Utilities
+   ============================================ */
+@layer components {
+  .hb-text-display {
+    @apply text-4xl md:text-5xl font-bold text-horizon-primary leading-tight tracking-tight;
+  }
+
+  .hb-text-headline {
+    @apply text-2xl md:text-3xl font-bold text-horizon-primary leading-tight;
+  }
+
+  .hb-text-title {
+    @apply text-xl md:text-2xl font-bold text-horizon-primary;
+  }
+
+  .hb-text-subtitle {
+    @apply text-lg font-medium text-horizon-gray-700;
+  }
+
+  .hb-text-body {
+    @apply text-base text-horizon-gray-700 leading-relaxed;
+  }
+
+  .hb-text-body-sm {
+    @apply text-sm text-horizon-gray-600 leading-relaxed;
+  }
+
+  .hb-text-caption {
+    @apply text-xs text-horizon-gray-500 leading-normal;
+  }
+
+  .hb-text-overline {
+    @apply text-xxs uppercase tracking-widest font-medium text-horizon-gray-500;
+  }
+
+  .hb-text-link {
+    @apply text-horizon-blue hover:text-horizon-primary underline cursor-pointer transition-colors duration-200;
+  }
+
+  .hb-text-muted {
+    @apply text-horizon-gray-400;
+  }
+
+  .hb-text-success {
+    @apply text-green-700;
+  }
+
+  .hb-text-error {
+    @apply text-red-700;
+  }
+
+  .hb-text-warning {
+    @apply text-yellow-700;
+  }
+
+  .hb-text-info {
+    @apply text-horizon-secondary;
+  }
+
+  .hb-text-truncate {
+    @apply truncate;
+  }
+
+  .hb-text-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .hb-text-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+/* ============================================
+   Button System
+   ============================================ */
+@layer components {
+  .hb-btn {
+    @apply inline-flex items-center justify-center font-medium rounded-lg
+           px-5 py-2.5 text-sm leading-tight
+           transition-all duration-200 ease-in-out
+           cursor-pointer border border-transparent
+           select-none whitespace-nowrap;
+  }
+
+  .hb-btn:disabled,
+  .hb-btn[aria-disabled="true"] {
+    @apply opacity-50 cursor-not-allowed pointer-events-none;
+  }
+
+  /* Primary Button */
+  .hb-btn-primary {
+    @apply hb-btn bg-horizon-primary text-white;
+  }
+
+  .hb-btn-primary:hover:not(:disabled) {
+    @apply bg-horizon-primary-dark shadow-horizon-md;
+  }
+
+  .hb-btn-primary:active:not(:disabled) {
+    @apply bg-horizon-primary-dark shadow-horizon-sm;
+    transform: translateY(0.5px);
+  }
+
+  /* Secondary Button */
+  .hb-btn-secondary {
+    @apply hb-btn bg-horizon-secondary text-white;
+  }
+
+  .hb-btn-secondary:hover:not(:disabled) {
+    @apply bg-horizon-secondary-dark shadow-horizon-md;
+  }
+
+  .hb-btn-secondary:active:not(:disabled) {
+    @apply bg-horizon-secondary-dark shadow-horizon-sm;
+    transform: translateY(0.5px);
+  }
+
+  /* Outline Button */
+  .hb-btn-outline {
+    @apply hb-btn bg-transparent text-horizon-primary border-horizon-primary border-2;
+  }
+
+  .hb-btn-outline:hover:not(:disabled) {
+    @apply bg-horizon-primary text-white shadow-horizon-md;
+  }
+
+  .hb-btn-outline:active:not(:disabled) {
+    @apply bg-horizon-primary-dark text-white;
+    transform: translateY(0.5px);
+  }
+
+  /* Outline Secondary Button */
+  .hb-btn-outline-secondary {
+    @apply hb-btn bg-transparent text-horizon-secondary border-horizon-secondary border-2;
+  }
+
+  .hb-btn-outline-secondary:hover:not(:disabled) {
+    @apply bg-horizon-secondary text-white shadow-horizon-md;
+  }
+
+  /* Ghost Button */
+  .hb-btn-ghost {
+    @apply hb-btn bg-transparent text-horizon-primary;
+  }
+
+  .hb-btn-ghost:hover:not(:disabled) {
+    @apply bg-horizon-gray-100;
+  }
+
+  .hb-btn-ghost:active:not(:disabled) {
+    @apply bg-horizon-gray-200;
+  }
+
+  /* Danger Button */
+  .hb-btn-danger {
+    @apply hb-btn bg-red-600 text-white;
+  }
+
+  .hb-btn-danger:hover:not(:disabled) {
+    @apply bg-red-700 shadow-horizon-md;
+  }
+
+  .hb-btn-danger:active:not(:disabled) {
+    @apply bg-red-800;
+    transform: translateY(0.5px);
+  }
+
+  /* Link Button */
+  .hb-btn-link {
+    @apply hb-btn bg-transparent text-horizon-blue p-0 border-none;
+  }
+
+  .hb-btn-link:hover:not(:disabled) {
+    @apply text-horizon-primary underline;
+  }
+
+  /* Button Sizes */
+  .hb-btn-xs {
+    @apply px-2.5 py-1 text-xs rounded-md;
+  }
+
+  .hb-btn-sm {
+    @apply px-3.5 py-1.5 text-sm rounded-md;
+  }
+
+  .hb-btn-lg {
+    @apply px-7 py-3 text-base rounded-xl;
+  }
+
+  .hb-btn-xl {
+    @apply px-8 py-3.5 text-lg rounded-xl;
+  }
+
+  /* Full Width Button */
+  .hb-btn-block {
+    @apply w-full;
+  }
+
+  /* Icon Button */
+  .hb-btn-icon {
+    @apply hb-btn p-2.5 rounded-full;
+  }
+
+  .hb-btn-icon-sm {
+    @apply hb-btn p-1.5 rounded-full text-xs;
+  }
+
+  .hb-btn-icon-lg {
+    @apply hb-btn p-3.5 rounded-full text-lg;
+  }
+}
+
+/* ============================================
+   Alert System
+   ============================================ */
+@layer components {
+  .hb-alert {
+    @apply flex items-start gap-3 p-4 rounded-lg border text-sm leading-relaxed;
+  }
+
+  .hb-alert-info {
+    @apply hb-alert bg-blue-50 border-blue-200 text-blue-800;
+  }
+
+  .hb-alert-success {
+    @apply hb-alert bg-green-50 border-green-200 text-green-800;
+  }
+
+  .hb-alert-warning {
+    @apply hb-alert bg-yellow-50 border-yellow-200 text-yellow-800;
+  }
+
+  .hb-alert-error {
+    @apply hb-alert bg-red-50 border-red-200 text-red-800;
+  }
+
+  .hb-alert-neutral {
+    @apply hb-alert bg-horizon-gray-100 border-horizon-gray-300 text-horizon-gray-700;
+  }
+
+  .hb-alert-title {
+    @apply font-bold text-base mb-1;
+  }
+
+  .hb-alert-dismiss {
+    @apply ml-auto p-1 rounded-md cursor-pointer opacity-60 hover:opacity-100 transition-opacity duration-200;
+  }
+
+  .hb-alert-icon {
+    @apply flex-shrink-0 w-5 h-5 mt-0.5;
+  }
+}
+
+/* ============================================
+   Modal / Dialog System
+   ============================================ */
+@layer components {
+  .hb-modal-overlay {
+    @apply fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4;
+    backdrop-filter: blur(2px);
+    animation: hb-fade-in 0.2s ease-out;
+  }
+
+  .hb-modal {
+    @apply bg-white rounded-2xl shadow-horizon-xl w-full max-h-[90vh] overflow-hidden flex flex-col;
+    animation: hb-slide-up 0.25s ease-out;
+  }
+
+  .hb-modal-sm {
+    @apply max-w-sm;
+  }
+
+  .hb-modal-md {
+    @apply max-w-lg;
+  }
+
+  .hb-modal-lg {
+    @apply max-w-2xl;
+  }
+
+  .hb-modal-xl {
+    @apply max-w-4xl;
+  }
+
+  .hb-modal-full {
+    @apply max-w-full mx-4;
+  }
+
+  .hb-modal-header {
+    @apply flex items-center justify-between px-6 py-4 border-b border-horizon-gray-200;
+  }
+
+  .hb-modal-title {
+    @apply text-lg font-bold text-horizon-primary;
+  }
+
+  .hb-modal-close {
+    @apply p-1.5 rounded-full text-horizon-gray-400 hover:text-horizon-gray-700 hover:bg-horizon-gray-100 transition-all duration-200 cursor-pointer;
+  }
+
+  .hb-modal-body {
+    @apply px-6 py-4 overflow-y-auto flex-1;
+  }
+
+  .hb-modal-footer {
+    @apply flex items-center justify-end gap-3 px-6 py-4 border-t border-horizon-gray-200 bg-horizon-gray-50;
+  }
+}
+
+/* ============================================
+   Card System
+   ============================================ */
+@layer components {
+  .hb-card {
+    @apply bg-white rounded-xl shadow-horizon border border-horizon-gray-200 overflow-hidden;
+  }
+
+  .hb-card-hover {
+    @apply hb-card transition-shadow duration-200 hover:shadow-horizon-lg;
+  }
+
+  .hb-card-clickable {
+    @apply hb-card-hover cursor-pointer;
+  }
+
+  .hb-card-header {
+    @apply px-6 py-4 border-b border-horizon-gray-200;
+  }
+
+  .hb-card-body {
+    @apply px-6 py-4;
+  }
+
+  .hb-card-footer {
+    @apply px-6 py-4 border-t border-horizon-gray-200 bg-horizon-gray-50;
+  }
+
+  .hb-card-flat {
+    @apply bg-white rounded-xl border border-horizon-gray-200 overflow-hidden;
+  }
+
+  .hb-card-elevated {
+    @apply bg-white rounded-xl shadow-horizon-lg overflow-hidden;
+  }
+
+  .hb-card-accent {
+    @apply hb-card border-l-4 border-l-horizon-primary;
+  }
+
+  .hb-card-accent-secondary {
+    @apply hb-card border-l-4 border-l-horizon-secondary;
+  }
+}
+
+/* ============================================
+   Form System
+   ============================================ */
+@layer components {
+  .hb-form-group {
+    @apply mb-4;
+  }
+
+  .hb-form-label {
+    @apply block text-sm font-medium text-horizon-gray-700 mb-1.5;
+  }
+
+  .hb-form-label-required::after {
+    content: ' *';
+    @apply text-red-500;
+  }
+
+  .hb-form-input {
+    @apply w-full px-3.5 py-2.5 text-sm text-horizon-dark bg-white
+           border border-horizon-gray-300 rounded-lg
+           transition-all duration-200
+           placeholder:text-horizon-gray-400;
+  }
+
+  .hb-form-input:hover:not(:disabled) {
+    @apply border-horizon-gray-400;
+  }
+
+  .hb-form-input:focus {
+    @apply border-horizon-primary ring-2 ring-horizon-primary/20;
+  }
+
+  .hb-form-input:disabled {
+    @apply bg-horizon-gray-100 text-horizon-gray-400 cursor-not-allowed;
+  }
+
+  .hb-form-input-error {
+    @apply border-red-500 ring-2 ring-red-500/20;
+  }
+
+  .hb-form-input-success {
+    @apply border-green-500 ring-2 ring-green-500/20;
+  }
+
+  .hb-form-textarea {
+    @apply hb-form-input resize-y min-h-[100px];
+  }
+
+  .hb-form-select {
+    @apply hb-form-input appearance-none bg-no-repeat bg-right pr-10;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-position: right 0.75rem center;
+  }
+
+  .hb-form-checkbox {
+    @apply w-4 h-4 text-horizon-primary border-horizon-gray-300 rounded
+           focus:ring-2 focus:ring-horizon-primary/20 cursor-pointer;
+  }
+
+  .hb-form-radio {
+    @apply w-4 h-4 text-horizon-primary border-horizon-gray-300
+           focus:ring-2 focus:ring-horizon-primary/20 cursor-pointer;
+  }
+
+  .hb-form-hint {
+    @apply text-xs text-horizon-gray-500 mt-1;
+  }
+
+  .hb-form-error {
+    @apply text-xs text-red-600 mt-1;
+  }
+
+  .hb-form-success {
+    @apply text-xs text-green-600 mt-1;
+  }
+
+  .hb-form-inline {
+    @apply flex items-center gap-2;
+  }
+
+  .hb-form-switch {
+    @apply relative inline-flex h-6 w-11 items-center rounded-full cursor-pointer
+           transition-colors duration-200 ease-in-out;
+  }
+
+  .hb-form-switch-on {
+    @apply bg-horizon-primary;
+  }
+
+  .hb-form-switch-off {
+    @apply bg-horizon-gray-300;
+  }
+
+  .hb-form-switch-thumb {
+    @apply inline-block h-4 w-4 rounded-full bg-white shadow-sm
+           transition-transform duration-200 ease-in-out;
+  }
+
+  .hb-form-switch-thumb-on {
+    @apply translate-x-6;
+  }
+
+  .hb-form-switch-thumb-off {
+    @apply translate-x-1;
+  }
+}
+
+/* ============================================
+   Grid System
+   ============================================ */
+@layer components {
+  .hb-container {
+    @apply w-full max-w-portal mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .hb-container-fluid {
+    @apply w-full px-4 sm:px-6 lg:px-8;
+  }
+
+  .hb-grid {
+    @apply grid gap-4;
+  }
+
+  .hb-grid-cols-1 {
+    @apply grid-cols-1;
+  }
+
+  .hb-grid-cols-2 {
+    @apply grid-cols-1 sm:grid-cols-2;
+  }
+
+  .hb-grid-cols-3 {
+    @apply grid-cols-1 sm:grid-cols-2 lg:grid-cols-3;
+  }
+
+  .hb-grid-cols-4 {
+    @apply grid-cols-1 sm:grid-cols-2 lg:grid-cols-4;
+  }
+
+  .hb-grid-cols-6 {
+    @apply grid-cols-2 sm:grid-cols-3 lg:grid-cols-6;
+  }
+
+  .hb-grid-gap-sm {
+    @apply gap-2;
+  }
+
+  .hb-grid-gap-md {
+    @apply gap-4;
+  }
+
+  .hb-grid-gap-lg {
+    @apply gap-6;
+  }
+
+  .hb-grid-gap-xl {
+    @apply gap-8;
+  }
+
+  /* Sidebar layout */
+  .hb-layout-sidebar {
+    @apply grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-6;
+  }
+
+  .hb-layout-sidebar-right {
+    @apply grid grid-cols-1 lg:grid-cols-[1fr_280px] gap-6;
+  }
+
+  /* Content layout */
+  .hb-layout-content {
+    @apply flex flex-col min-h-screen-content;
+  }
+
+  .hb-layout-main {
+    @apply flex-1;
+  }
+}
+
+/* ============================================
+   Spacing Utilities
+   ============================================ */
+@layer components {
+  .hb-section {
+    @apply py-8 md:py-12;
+  }
+
+  .hb-section-sm {
+    @apply py-4 md:py-6;
+  }
+
+  .hb-section-lg {
+    @apply py-12 md:py-16;
+  }
+
+  .hb-stack {
+    @apply flex flex-col gap-4;
+  }
+
+  .hb-stack-sm {
+    @apply flex flex-col gap-2;
+  }
+
+  .hb-stack-lg {
+    @apply flex flex-col gap-6;
+  }
+
+  .hb-stack-xl {
+    @apply flex flex-col gap-8;
+  }
+
+  .hb-inline {
+    @apply flex items-center gap-4;
+  }
+
+  .hb-inline-sm {
+    @apply flex items-center gap-2;
+  }
+
+  .hb-inline-lg {
+    @apply flex items-center gap-6;
+  }
+
+  .hb-divider {
+    @apply border-t border-horizon-gray-200 my-4;
+  }
+
+  .hb-divider-thick {
+    @apply border-t-2 border-horizon-gray-300 my-6;
+  }
+}
+
+/* ============================================
+   Avatar System
+   ============================================ */
+@layer components {
+  .hb-avatar {
+    @apply inline-flex items-center justify-center rounded-full bg-horizon-primary text-white font-bold overflow-hidden flex-shrink-0;
+  }
+
+  .hb-avatar-xs {
+    @apply w-6 h-6 text-xxs;
+  }
+
+  .hb-avatar-sm {
+    @apply w-8 h-8 text-xs;
+  }
+
+  .hb-avatar-md {
+    @apply w-10 h-10 text-sm;
+  }
+
+  .hb-avatar-lg {
+    @apply w-12 h-12 text-base;
+  }
+
+  .hb-avatar-xl {
+    @apply w-16 h-16 text-xl;
+  }
+
+  .hb-avatar-2xl {
+    @apply w-20 h-20 text-2xl;
+  }
+
+  .hb-avatar-secondary {
+    @apply bg-horizon-secondary;
+  }
+
+  .hb-avatar-accent {
+    @apply bg-horizon-accent text-horizon-primary;
+  }
+
+  .hb-avatar-group {
+    @apply flex -space-x-2;
+  }
+
+  .hb-avatar-group .hb-avatar {
+    @apply ring-2 ring-white;
+  }
+
+  .hb-avatar img {
+    @apply w-full h-full object-cover;
+  }
+}
+
+/* ============================================
+   Badge System
+   ============================================ */
+@layer components {
+  .hb-badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+
+  .hb-badge-primary {
+    @apply bg-horizon-primary/10 text-horizon-primary;
+  }
+
+  .hb-badge-secondary {
+    @apply bg-horizon-secondary/10 text-horizon-secondary-dark;
+  }
+
+  .hb-badge-success {
+    @apply bg-green-100 text-green-800;
+  }
+
+  .hb-badge-warning {
+    @apply bg-yellow-100 text-yellow-800;
+  }
+
+  .hb-badge-error {
+    @apply bg-red-100 text-red-800;
+  }
+
+  .hb-badge-info {
+    @apply bg-blue-100 text-blue-800;
+  }
+
+  .hb-badge-neutral {
+    @apply bg-horizon-gray-100 text-horizon-gray-700;
+  }
+
+  .hb-badge-outline {
+    @apply bg-transparent border border-current;
+  }
+
+  .hb-badge-dot {
+    @apply w-2 h-2 rounded-full inline-block mr-1.5;
+  }
+
+  .hb-badge-dot-success {
+    @apply hb-badge-dot bg-green-500;
+  }
+
+  .hb-badge-dot-warning {
+    @apply hb-badge-dot bg-yellow-500;
+  }
+
+  .hb-badge-dot-error {
+    @apply hb-badge-dot bg-red-500;
+  }
+
+  .hb-badge-dot-info {
+    @apply hb-badge-dot bg-blue-500;
+  }
+}
+
+/* ============================================
+   Table System
+   ============================================ */
+@layer components {
+  .hb-table-wrapper {
+    @apply overflow-x-auto rounded-xl border border-horizon-gray-200;
+  }
+
+  .hb-table {
+    @apply w-full text-sm text-left;
+  }
+
+  .hb-table thead {
+    @apply bg-horizon-gray-50 border-b border-horizon-gray-200;
+  }
+
+  .hb-table th {
+    @apply px-4 py-3 font-semibold text-horizon-gray-600 text-xs uppercase tracking-wider whitespace-nowrap;
+  }
+
+  .hb-table td {
+    @apply px-4 py-3 text-horizon-gray-700;
+  }
+
+  .hb-table tbody tr {
+    @apply border-b border-horizon-gray-100 last:border-b-0;
+  }
+
+  .hb-table-striped tbody tr:nth-child(even) {
+    @apply bg-horizon-gray-50;
+  }
+
+  .hb-table-hover tbody tr:hover {
+    @apply bg-horizon-gray-50;
+  }
+
+  .hb-table-compact th,
+  .hb-table-compact td {
+    @apply px-3 py-2;
+  }
+}
+
+/* ============================================
+   Border Utilities
+   ============================================ */
+@layer components {
+  .hb-border {
+    @apply border border-horizon-gray-200;
+  }
+
+  .hb-border-t {
+    @apply border-t border-horizon-gray-200;
+  }
+
+  .hb-border-b {
+    @apply border-b border-horizon-gray-200;
+  }
+
+  .hb-border-l {
+    @apply border-l border-horizon-gray-200;
+  }
+
+  .hb-border-r {
+    @apply border-r border-horizon-gray-200;
+  }
+
+  .hb-border-primary {
+    @apply border-horizon-primary;
+  }
+
+  .hb-border-secondary {
+    @apply border-horizon-secondary;
+  }
+
+  .hb-border-accent {
+    @apply border-horizon-accent;
+  }
+
+  .hb-rounded {
+    @apply rounded-lg;
+  }
+
+  .hb-rounded-sm {
+    @apply rounded-md;
+  }
+
+  .hb-rounded-lg {
+    @apply rounded-xl;
+  }
+
+  .hb-rounded-full {
+    @apply rounded-full;
+  }
+}
+
+/* ============================================
+   Shadow Utilities
+   ============================================ */
+@layer components {
+  .hb-shadow-none {
+    @apply shadow-none;
+  }
+
+  .hb-shadow-sm {
+    @apply shadow-horizon-sm;
+  }
+
+  .hb-shadow {
+    @apply shadow-horizon;
+  }
+
+  .hb-shadow-md {
+    @apply shadow-horizon-md;
+  }
+
+  .hb-shadow-lg {
+    @apply shadow-horizon-lg;
+  }
+
+  .hb-shadow-xl {
+    @apply shadow-horizon-xl;
+  }
+}
+
+/* ============================================
+   Display Utilities
+   ============================================ */
+@layer components {
+  .hb-hidden {
+    @apply hidden;
+  }
+
+  .hb-visible {
+    @apply block;
+  }
+
+  .hb-sr-only {
+    @apply sr-only;
+  }
+
+  .hb-hide-mobile {
+    @apply hidden md:block;
+  }
+
+  .hb-show-mobile {
+    @apply block md:hidden;
+  }
+
+  .hb-hide-tablet {
+    @apply hidden lg:block;
+  }
+
+  .hb-show-tablet {
+    @apply block lg:hidden;
+  }
+
+  .hb-overflow-hidden {
+    @apply overflow-hidden;
+  }
+
+  .hb-overflow-auto {
+    @apply overflow-auto;
+  }
+
+  .hb-overflow-scroll {
+    @apply overflow-y-scroll;
+  }
+}
+
+/* ============================================
+   Flex Utilities
+   ============================================ */
+@layer components {
+  .hb-flex {
+    @apply flex;
+  }
+
+  .hb-flex-col {
+    @apply flex flex-col;
+  }
+
+  .hb-flex-row {
+    @apply flex flex-row;
+  }
+
+  .hb-flex-wrap {
+    @apply flex flex-wrap;
+  }
+
+  .hb-flex-center {
+    @apply flex items-center justify-center;
+  }
+
+  .hb-flex-between {
+    @apply flex items-center justify-between;
+  }
+
+  .hb-flex-start {
+    @apply flex items-center justify-start;
+  }
+
+  .hb-flex-end {
+    @apply flex items-center justify-end;
+  }
+
+  .hb-flex-1 {
+    @apply flex-1;
+  }
+
+  .hb-flex-shrink-0 {
+    @apply flex-shrink-0;
+  }
+
+  .hb-flex-grow {
+    @apply flex-grow;
+  }
+
+  .hb-items-start {
+    @apply items-start;
+  }
+
+  .hb-items-end {
+    @apply items-end;
+  }
+
+  .hb-items-stretch {
+    @apply items-stretch;
+  }
+
+  .hb-gap-xs {
+    @apply gap-1;
+  }
+
+  .hb-gap-sm {
+    @apply gap-2;
+  }
+
+  .hb-gap-md {
+    @apply gap-4;
+  }
+
+  .hb-gap-lg {
+    @apply gap-6;
+  }
+
+  .hb-gap-xl {
+    @apply gap-8;
+  }
+}
+
+/* ============================================
+   Navigation / Tabs
+   ============================================ */
+@layer components {
+  .hb-tabs {
+    @apply flex border-b border-horizon-gray-200;
+  }
+
+  .hb-tab {
+    @apply px-4 py-2.5 text-sm font-medium text-horizon-gray-500 border-b-2 border-transparent
+           cursor-pointer transition-all duration-200 whitespace-nowrap -mb-px;
+  }
+
+  .hb-tab:hover {
+    @apply text-horizon-primary border-horizon-gray-300;
+  }
+
+  .hb-tab-active {
+    @apply text-horizon-primary border-horizon-primary;
+  }
+
+  .hb-breadcrumb {
+    @apply flex items-center gap-2 text-sm text-horizon-gray-500;
+  }
+
+  .hb-breadcrumb-item {
+    @apply hover:text-horizon-primary transition-colors duration-200;
+  }
+
+  .hb-breadcrumb-separator {
+    @apply text-horizon-gray-300;
+  }
+
+  .hb-breadcrumb-current {
+    @apply text-horizon-gray-700 font-medium;
+  }
+}
+
+/* ============================================
+   Tooltip
+   ============================================ */
+@layer components {
+  .hb-tooltip {
+    @apply relative inline-block;
+  }
+
+  .hb-tooltip-content {
+    @apply absolute z-50 px-3 py-1.5 text-xs text-white bg-horizon-gray-800 rounded-md
+           shadow-lg whitespace-nowrap pointer-events-none
+           opacity-0 invisible transition-all duration-200;
+  }
+
+  .hb-tooltip:hover .hb-tooltip-content {
+    @apply opacity-100 visible;
+  }
+
+  .hb-tooltip-top .hb-tooltip-content {
+    @apply bottom-full left-1/2 -translate-x-1/2 mb-2;
+  }
+
+  .hb-tooltip-bottom .hb-tooltip-content {
+    @apply top-full left-1/2 -translate-x-1/2 mt-2;
+  }
+
+  .hb-tooltip-left .hb-tooltip-content {
+    @apply right-full top-1/2 -translate-y-1/2 mr-2;
+  }
+
+  .hb-tooltip-right .hb-tooltip-content {
+    @apply left-full top-1/2 -translate-y-1/2 ml-2;
+  }
+}
+
+/* ============================================
+   Loading / Spinner
+   ============================================ */
+@layer components {
+  .hb-spinner {
+    @apply inline-block rounded-full border-2 border-horizon-gray-200 border-t-horizon-primary animate-spin;
+  }
+
+  .hb-spinner-sm {
+    @apply w-4 h-4;
+  }
+
+  .hb-spinner-md {
+    @apply w-6 h-6;
+  }
+
+  .hb-spinner-lg {
+    @apply w-10 h-10 border-4;
+  }
+
+  .hb-spinner-xl {
+    @apply w-14 h-14 border-4;
+  }
+
+  .hb-spinner-white {
+    @apply border-white/30 border-t-white;
+  }
+
+  .hb-skeleton {
+    @apply bg-horizon-gray-200 rounded-md animate-pulse;
+  }
+
+  .hb-skeleton-text {
+    @apply hb-skeleton h-4 w-full;
+  }
+
+  .hb-skeleton-title {
+    @apply hb-skeleton h-6 w-3/4;
+  }
+
+  .hb-skeleton-avatar {
+    @apply hb-skeleton rounded-full w-10 h-10;
+  }
+
+  .hb-skeleton-card {
+    @apply hb-skeleton h-40 w-full rounded-xl;
+  }
+
+  .hb-loading-overlay {
+    @apply absolute inset-0 bg-white/70 flex items-center justify-center z-10 rounded-xl;
+  }
+}
+
+/* ============================================
+   Progress Bar
+   ============================================ */
+@layer components {
+  .hb-progress {
+    @apply w-full bg-horizon-gray-200 rounded-full overflow-hidden;
+  }
+
+  .hb-progress-sm {
+    @apply h-1.5;
+  }
+
+  .hb-progress-md {
+    @apply h-2.5;
+  }
+
+  .hb-progress-lg {
+    @apply h-4;
+  }
+
+  .hb-progress-bar {
+    @apply h-full bg-horizon-primary rounded-full transition-all duration-500 ease-out;
+  }
+
+  .hb-progress-bar-secondary {
+    @apply bg-horizon-secondary;
+  }
+
+  .hb-progress-bar-success {
+    @apply bg-green-500;
+  }
+
+  .hb-progress-bar-warning {
+    @apply bg-yellow-500;
+  }
+
+  .hb-progress-bar-error {
+    @apply bg-red-500;
+  }
+}
+
+/* ============================================
+   Dropdown
+   ============================================ */
+@layer components {
+  .hb-dropdown {
+    @apply relative inline-block;
+  }
+
+  .hb-dropdown-menu {
+    @apply absolute z-40 mt-1 bg-white rounded-xl shadow-horizon-lg border border-horizon-gray-200
+           py-1 min-w-[180px] overflow-hidden;
+    animation: hb-fade-in 0.15s ease-out;
+  }
+
+  .hb-dropdown-menu-right {
+    @apply right-0;
+  }
+
+  .hb-dropdown-item {
+    @apply block w-full text-left px-4 py-2.5 text-sm text-horizon-gray-700
+           hover:bg-horizon-gray-50 hover:text-horizon-primary
+           transition-colors duration-150 cursor-pointer;
+  }
+
+  .hb-dropdown-item-active {
+    @apply bg-horizon-primary/5 text-horizon-primary font-medium;
+  }
+
+  .hb-dropdown-divider {
+    @apply border-t border-horizon-gray-200 my-1;
+  }
+
+  .hb-dropdown-header {
+    @apply px-4 py-2 text-xs font-semibold text-horizon-gray-400 uppercase tracking-wider;
+  }
+}
+
+/* ============================================
+   Pagination
+   ============================================ */
+@layer components {
+  .hb-pagination {
+    @apply flex items-center gap-1;
+  }
+
+  .hb-pagination-item {
+    @apply inline-flex items-center justify-center w-9 h-9 text-sm rounded-lg
+           text-horizon-gray-600 hover:bg-horizon-gray-100
+           transition-colors duration-200 cursor-pointer;
+  }
+
+  .hb-pagination-item-active {
+    @apply bg-horizon-primary text-white hover:bg-horizon-primary-dark;
+  }
+
+  .hb-pagination-item-disabled {
+    @apply opacity-40 cursor-not-allowed pointer-events-none;
+  }
+}
+
+/* ============================================
+   Animations / Keyframes
+   ============================================ */
+@keyframes hb-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes hb-fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes hb-slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hb-slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hb-slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes hb-slide-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes hb-scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes hb-bounce-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@layer utilities {
+  .hb-animate-fade-in {
+    animation: hb-fade-in 0.3s ease-out;
+  }
+
+  .hb-animate-fade-out {
+    animation: hb-fade-out 0.3s ease-out;
+  }
+
+  .hb-animate-slide-up {
+    animation: hb-slide-up 0.3s ease-out;
+  }
+
+  .hb-animate-slide-down {
+    animation: hb-slide-down 0.3s ease-out;
+  }
+
+  .hb-animate-slide-in-right {
+    animation: hb-slide-in-right 0.3s ease-out;
+  }
+
+  .hb-animate-slide-in-left {
+    animation: hb-slide-in-left 0.3s ease-out;
+  }
+
+  .hb-animate-scale-in {
+    animation: hb-scale-in 0.2s ease-out;
+  }
+
+  .hb-animate-bounce-in {
+    animation: hb-bounce-in 0.5s ease-out;
+  }
+}
+
+/* ============================================
+   Accessibility - Focus Styles
+   ============================================ */
+@layer utilities {
+  /* Visible focus ring for keyboard navigation */
+  .hb-focus-ring:focus-visible,
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible,
+  [tabindex]:focus-visible,
+  [role="button"]:focus-visible,
+  [role="link"]:focus-visible,
+  [role="tab"]:focus-visible,
+  [role="menuitem"]:focus-visible {
+    outline: 2px solid #0070e0;
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  /* High contrast focus for dark backgrounds */
+  .hb-focus-ring-light:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 2px;
+  }
+
+  /* Skip to main content link */
+  .hb-skip-link {
+    @apply sr-only;
+  }
+
+  .hb-skip-link:focus {
+    @apply not-sr-only fixed top-2 left-2 z-[9999] bg-horizon-primary text-white
+           px-4 py-2 rounded-lg font-medium text-sm shadow-horizon-lg;
+  }
+
+  /* Reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  /* High contrast mode support */
+  @media (forced-colors: active) {
+    .hb-btn-primary,
+    .hb-btn-secondary,
+    .hb-btn-danger {
+      border: 2px solid ButtonText;
+    }
+
+    .hb-badge {
+      border: 1px solid;
+    }
+
+    .hb-card {
+      border: 1px solid;
+    }
+  }
+}
+
+/* ============================================
+   Print Styles
+   ============================================ */
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  body {
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    font-weight: normal;
+  }
+
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+    page-break-inside: avoid;
+  }
+
+  p, li {
+    orphans: 3;
+    widows: 3;
+  }
+
+  table {
+    border-collapse: collapse !important;
+  }
+
+  table th,
+  table td {
+    border: 1px solid #ddd !important;
+    padding: 8px !important;
+  }
+
+  /* Hide non-printable elements */
+  nav,
+  footer,
+  .hb-no-print,
+  .hb-modal-overlay,
+  .hb-btn,
+  .hb-dropdown-menu,
+  .hb-skip-link {
+    display: none !important;
+  }
+
+  /* Print-specific display */
+  .hb-print-only {
+    display: block !important;
+  }
+
+  .hb-print-break-before {
+    page-break-before: always;
+  }
+
+  .hb-print-break-after {
+    page-break-after: always;
+  }
+
+  .hb-print-avoid-break {
+    page-break-inside: avoid;
+  }
+
+  /* Ensure cards print with borders */
+  .hb-card {
+    border: 1px solid #ddd !important;
+    page-break-inside: avoid;
+  }
+
+  /* Print header */
+  .hb-print-header {
+    display: block !important;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #000;
+  }
+}
+
+/* ============================================
+   Scrollbar Styling
+   ============================================ */
+@layer utilities {
+  .hb-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #d1d5db transparent;
+  }
+
+  .hb-scrollbar::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  .hb-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .hb-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #d1d5db;
+    border-radius: 3px;
+  }
+
+  .hb-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: #9ca3af;
+  }
+
+  .hb-scrollbar-hidden {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .hb-scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* ============================================
+   Miscellaneous Utilities
+   ============================================ */
+@layer utilities {
+  .hb-transition {
+    @apply transition-all duration-200 ease-in-out;
+  }
+
+  .hb-transition-fast {
+    @apply transition-all duration-100 ease-in-out;
+  }
+
+  .hb-transition-slow {
+    @apply transition-all duration-300 ease-in-out;
+  }
+
+  .hb-clickable {
+    @apply cursor-pointer select-none;
+  }
+
+  .hb-no-select {
+    @apply select-none;
+  }
+
+  .hb-backdrop {
+    @apply fixed inset-0 bg-black/50 z-40;
+    backdrop-filter: blur(2px);
+  }
+
+  .hb-overlay {
+    @apply absolute inset-0 bg-white/80 z-10;
+  }
+
+  .hb-truncate {
+    @apply truncate;
+  }
+
+  .hb-line-clamp-1 {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .hb-line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .hb-line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* Print visibility */
+  .hb-no-print {
+    /* Handled in print media query */
+  }
+
+  .hb-print-only {
+    display: none;
+  }
+
+  /* Aspect ratios */
+  .hb-aspect-square {
+    @apply aspect-square;
+  }
+
+  .hb-aspect-video {
+    @apply aspect-video;
+  }
+
+  /* Position helpers */
+  .hb-sticky-top {
+    @apply sticky top-0 z-30;
+  }
+
+  .hb-fixed-bottom {
+    @apply fixed bottom-0 left-0 right-0 z-30;
+  }
+}

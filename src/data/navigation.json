@@ -1,0 +1,226 @@
+[
+  {
+    "id": "nav-dashboard",
+    "label": "Dashboard",
+    "path": "/dashboard",
+    "icon": "dashboard",
+    "order": 1,
+    "children": []
+  },
+  {
+    "id": "nav-get-care",
+    "label": "Get Care",
+    "path": "/find-care",
+    "icon": "get_care",
+    "order": 2,
+    "children": [
+      {
+        "id": "nav-find-provider",
+        "label": "Find a Provider",
+        "path": "/find-care/provider",
+        "icon": "search",
+        "order": 1
+      },
+      {
+        "id": "nav-find-facility",
+        "label": "Find a Facility",
+        "path": "/find-care/facility",
+        "icon": "facility",
+        "order": 2
+      },
+      {
+        "id": "nav-telehealth",
+        "label": "Telehealth",
+        "path": "/find-care/telehealth",
+        "icon": "telehealth",
+        "order": 3
+      },
+      {
+        "id": "nav-urgent-care",
+        "label": "Urgent Care",
+        "path": "/find-care/urgent-care",
+        "icon": "urgent_care",
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "nav-id-cards",
+    "label": "ID Cards",
+    "path": "/id-cards",
+    "icon": "id_card",
+    "order": 3,
+    "children": []
+  },
+  {
+    "id": "nav-claims",
+    "label": "Claims",
+    "path": "/claims",
+    "icon": "claims",
+    "order": 4,
+    "children": [
+      {
+        "id": "nav-claims-list",
+        "label": "View Claims",
+        "path": "/claims",
+        "icon": "list",
+        "order": 1
+      },
+      {
+        "id": "nav-claims-eob",
+        "label": "Explanation of Benefits",
+        "path": "/claims/eob",
+        "icon": "document",
+        "order": 2
+      },
+      {
+        "id": "nav-claims-submit",
+        "label": "Submit a Claim",
+        "path": "/claims/submit",
+        "icon": "upload",
+        "order": 3
+      }
+    ]
+  },
+  {
+    "id": "nav-benefits-coverage",
+    "label": "Benefits & Coverage",
+    "path": "/coverage",
+    "icon": "benefits",
+    "order": 5,
+    "children": [
+      {
+        "id": "nav-coverage-summary",
+        "label": "Coverage Summary",
+        "path": "/coverage",
+        "icon": "summary",
+        "order": 1
+      },
+      {
+        "id": "nav-benefits-details",
+        "label": "Benefits Details",
+        "path": "/benefits",
+        "icon": "details",
+        "order": 2
+      },
+      {
+        "id": "nav-prior-auth",
+        "label": "Prior Authorization",
+        "path": "/prior-authorization",
+        "icon": "prior_auth",
+        "order": 3
+      },
+      {
+        "id": "nav-spending",
+        "label": "Spending Summary",
+        "path": "/spending",
+        "icon": "spending",
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "nav-wellness",
+    "label": "Wellness",
+    "path": "/wellness",
+    "icon": "wellness",
+    "order": 6,
+    "children": [
+      {
+        "id": "nav-wellness-programs",
+        "label": "Wellness Programs",
+        "path": "/wellness/programs",
+        "icon": "program",
+        "order": 1
+      },
+      {
+        "id": "nav-wellness-preventive",
+        "label": "Preventive Care",
+        "path": "/wellness/preventive-care",
+        "icon": "preventive",
+        "order": 2
+      },
+      {
+        "id": "nav-wellness-resources",
+        "label": "Health Resources",
+        "path": "/wellness/resources",
+        "icon": "resources",
+        "order": 3
+      }
+    ]
+  },
+  {
+    "id": "nav-prescriptions",
+    "label": "Prescriptions",
+    "path": "/prescriptions",
+    "icon": "prescriptions",
+    "order": 7,
+    "children": [
+      {
+        "id": "nav-rx-history",
+        "label": "Prescription History",
+        "path": "/prescriptions/history",
+        "icon": "history",
+        "order": 1
+      },
+      {
+        "id": "nav-rx-formulary",
+        "label": "Drug Formulary",
+        "path": "/prescriptions/formulary",
+        "icon": "formulary",
+        "order": 2
+      },
+      {
+        "id": "nav-rx-pharmacy",
+        "label": "Find a Pharmacy",
+        "path": "/prescriptions/pharmacy",
+        "icon": "pharmacy",
+        "order": 3
+      },
+      {
+        "id": "nav-rx-mail-order",
+        "label": "Mail Order",
+        "path": "/prescriptions/mail-order",
+        "icon": "mail_order",
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "nav-documents",
+    "label": "Document Center",
+    "path": "/documents",
+    "icon": "documents",
+    "order": 8,
+    "children": [
+      {
+        "id": "nav-documents-eob",
+        "label": "Explanation of Benefits",
+        "path": "/documents?category=eob",
+        "icon": "eob",
+        "order": 1
+      },
+      {
+        "id": "nav-documents-plan",
+        "label": "Plan Documents",
+        "path": "/documents?category=plan_document",
+        "icon": "plan_document",
+        "order": 2
+      },
+      {
+        "id": "nav-documents-correspondence",
+        "label": "Correspondence",
+        "path": "/documents?category=correspondence",
+        "icon": "correspondence",
+        "order": 3
+      },
+      {
+        "id": "nav-documents-tax",
+        "label": "Tax Forms",
+        "path": "/documents?category=tax_form",
+        "icon": "tax_form",
+        "order": 4
+      }
+    ]
+  }
+]
